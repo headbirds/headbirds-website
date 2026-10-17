@@ -1,0 +1,143 @@
+
+media:
+  input: assets
+  output: /assets
+
+content:
+  - name: headbirds
+    label: HEADBIRDS — Contenidos
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: artist_name
+        label: Nombre artístico
+        type: string
+      - name: header_phrase
+        label: Frase superior
+        type: string
+      - name: hero_note
+        label: Texto de portada
+        type: text
+      - name: hero_scribble
+        label: Frase de portada
+        type: string
+      - name: hero_location
+        label: Ubicación
+        type: string
+      - name: hero_photo
+        label: Fotografía de portada
+        type: image
+      - name: footer_description
+        label: Texto inferior
+        type: text
+      - name: about_subtitle
+        label: About — Subtítulo
+        type: string
+      - name: about_note
+        label: About — Nota
+        type: text
+      - name: about_paragraph_1
+        label: About — Párrafo 1
+        type: text
+      - name: about_paragraph_2
+        label: About — Párrafo 2
+        type: text
+      - name: about_paragraph_3
+        label: About — Párrafo 3
+        type: text
+      - name: music_subtitle
+        label: Music Production — Subtítulo
+        type: string
+      - name: sessions_subtitle
+        label: DJ Sets — Subtítulo
+        type: string
+      - name: sessions_description
+        label: DJ Sets — Descripción
+        type: text
+      - name: sessions_note
+        label: DJ Sets — Nota
+        type: text
+      - name: spaces_subtitle
+        label: Spaces — Subtítulo
+        type: string
+      - name: spaces_description
+        label: Spaces — Descripción
+        type: text
+      - name: spaces_note
+        label: Spaces — Nota
+        type: text
+      - name: spaces_name_1
+        label: Spaces — Nombre 1
+        type: string
+      - name: spaces_name_2
+        label: Spaces — Nombre 2
+        type: string
+      - name: spaces_name_3
+        label: Spaces — Nombre 3
+        type: string
+      - name: archive_subtitle
+        label: Archive — Subtítulo
+        type: string
+      - name: archive_note
+        label: Archive — Nota
+        type: text
+      - name: booking_subtitle
+        label: Booking — Subtítulo
+        type: string
+      - name: presskit_subtitle
+        label: Press Kit — Subtítulo
+        type: string
+      - name: presskit_description
+        label: Press Kit — Descripción
+        type: text
+      - name: presskit_note
+        label: Press Kit — Nota
+        type: text
+      - name: presskit_file
+        label: Archivo Press Kit
+        type: file
+      - name: music_releases
+        label: Music Production — Lanzamientos
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Título
+            type: string
+          - name: details
+            label: Detalles
+            type: string
+      - name: sessions_items
+        label: DJ Sets — Sesiones
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Título
+            type: string
+          - name: url
+            label: Enlace
+            type: string
+      - name: spaces_photos
+        label: Spaces — Fotografías
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: Fotografía
+            type: image
+          - name: caption
+            label: Descripción
+            type: string
+      - name: archive_items
+        label: Archive — Elementos
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: Imagen
+            type: image
+          - name: caption
+            label: Descripción
+            type: string
