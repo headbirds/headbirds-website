@@ -1,0 +1,53 @@
+{
+  "header_phrase": "An ongoing practice",
+  "artist_name": "HEADBIRDS",
+  "hero_note": "Music, places, ideas. One continuous practice.",
+  "hero_scribble": "Follow your curiosity ↗",
+  "hero_location": "BCN / ELSEWHERE",
+  "footer_description": "Records, selections, places and everything that happens in between. No fixed order.",
+  "hero_photo": "assets/portrait.jpg",
+  "about_subtitle": "An ongoing practice in electronic music.",
+  "about_note": "Adapted from the HEADBIRDS press kit, with the broader artistic practice included.",
+  "music_subtitle": "Original works. Ideas pressed into sound.",
+  "sessions_subtitle": "Records in conversation. Selections without boundaries.",
+  "sessions_description": "An open space for mixes, recordings and unexpected connections.",
+  "sessions_note": "Selected recordings will live here. No invented sessions, no calendar.",
+  "spaces_subtitle": "Sometimes making music means making room for it.",
+  "spaces_description": "Places, nights and encounters made from the same impulse — creating conditions for music, for other artists, for something to happen.",
+  "spaces_note": "Three among many expressions of an ongoing practice.",
+  "archive_subtitle": "Fragments, images, traces. Not everything fits on a record.",
+  "archive_note": "Fragment 001. An archive that can keep growing.",
+  "booking_subtitle": "For performances, collaborations and other conversations.",
+  "presskit_subtitle": "Biography, selected releases, performances and press materials.",
+  "presskit_description": "A document for those who need the details.",
+  "presskit_note": "Original English press kit. The About text on this website is a shorter, updated interpretation.",
+  "about_paragraph_1": "For around two decades, HEADBIRDS has developed a sound that resists easy categorisation. House provides the warmth, electro introduces syncopation, and techno gives the music its physical force. The result moves between genres without settling into one.",
+  "about_paragraph_2": "Across EPs and albums including Kulturhaus and Atzar , that approach has travelled through clubs and festivals from Barcelona and Paris to New York, Hong Kong and Bangkok.",
+  "about_paragraph_3": "But the work extends beyond records and DJ sets. Creating spaces for music and for other artists — including Les Arcs, L’Estrany and COREA, among other projects — belongs to the same restless artistic impulse.",
+  "spaces_name_1": "Les Arcs",
+  "spaces_name_2": "L’Estrany",
+  "spaces_name_3": "COREA",
+  "presskit_file": "HEADBIRDS_Press_Kit.pdf",
+  "music_releases": [
+    {
+      "title": "Kulturhaus",
+      "details": "LP / RHYTHM CULT / 2022"
+    },
+    {
+      "title": "Terances",
+      "details": "EP / RHYTHM CULT / 2020"
+    },
+    {
+      "title": "Sharon Highlights",
+      "details": "EP / PRIMAVERA SOUND / 2013"
+    }
+  ],
+  "sessions_items": [],
+  "spaces_photos": [],
+  "archive_items": [
+    {
+      "image": "assets/archive-original.jpg",
+      "caption": "Fragment 001."
+    }
+  ]
+}
