@@ -1,0 +1,69 @@
+media:
+  input: assets
+  output: assets
+
+content:
+  - name: website
+    label: HEADBIRDS — Contenidos
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: artist_name, label: Nombre artístico, type: string }
+      - { name: header_phrase, label: Frase superior, type: string }
+      - { name: hero_note, label: Texto de portada, type: text }
+      - { name: hero_scribble, label: Frase manuscrita, type: string }
+      - { name: hero_location, label: Localización, type: string }
+      - { name: hero_photo, label: Fotografía principal, type: image }
+      - { name: footer_description, label: Texto de pie, type: text }
+      - { name: about_subtitle, label: About — subtítulo, type: string }
+      - { name: about_note, label: About — nota, type: text }
+      - { name: about_paragraph_1, label: About — párrafo 1, type: text }
+      - { name: about_paragraph_2, label: About — párrafo 2, type: text }
+      - { name: about_paragraph_3, label: About — párrafo 3, type: text }
+      - { name: music_subtitle, label: Music Production — subtítulo, type: string }
+      - name: music_releases
+        label: Music Production — lanzamientos
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Título, type: string }
+          - { name: details, label: Detalles, type: string }
+      - { name: sessions_subtitle, label: DJ Sets — subtítulo, type: string }
+      - { name: sessions_description, label: DJ Sets — descripción, type: text }
+      - { name: sessions_note, label: DJ Sets — nota, type: text }
+      - name: sessions_items
+        label: DJ Sets — sesiones
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Título, type: string }
+          - { name: details, label: Detalles, type: string, required: false }
+          - { name: url, label: Enlace, type: string, required: false }
+      - { name: spaces_subtitle, label: Spaces — subtítulo, type: string }
+      - { name: spaces_description, label: Spaces — descripción, type: text }
+      - { name: spaces_note, label: Spaces — nota, type: text }
+      - { name: spaces_name_1, label: Spaces — nombre 1, type: string }
+      - { name: spaces_name_2, label: Spaces — nombre 2, type: string }
+      - { name: spaces_name_3, label: Spaces — nombre 3, type: string }
+      - name: spaces_photos
+        label: Spaces — fotografías
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Imagen, type: image }
+          - { name: caption, label: Pie de foto, type: string, required: false }
+      - { name: archive_subtitle, label: Archive — subtítulo, type: string }
+      - { name: archive_note, label: Archive — nota, type: text }
+      - name: archive_items
+        label: Archive — elementos
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Imagen, type: image }
+          - { name: caption, label: Pie de foto, type: string, required: false }
+      - { name: booking_subtitle, label: Booking — subtítulo, type: string }
+      - { name: presskit_subtitle, label: Press Kit — subtítulo, type: string }
+      - { name: presskit_description, label: Press Kit — descripción, type: text }
+      - { name: presskit_note, label: Press Kit — nota, type: text }
+      - { name: presskit_file, label: Archivo Press Kit, type: file }
