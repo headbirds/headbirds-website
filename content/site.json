@@ -1,9 +1,9 @@
 {
   "artist_name": "HEADBIRDS",
-  "header_phrase": "An ongoing practice",
+  "header_phrase": "Something new through mixing",
   "hero_note": "Music, places, ideas. One continuous practice.",
   "hero_scribble": "Follow your curiosity ↗",
-  "hero_location": "BANYOLES",
+  "hero_location": "BANYOLES - GIRONA",
   "hero_photo": "/assets/portrait.jpg",
   "footer_description": "Records, selections, concepts, places and everything that happens in between",
   "about_subtitle": "An ongoing practice in electronic music.",
@@ -34,18 +34,12 @@
       "details": "LP / RHYTHM CULT / 2022"
     },
     {
-      "title": "Terances",
-      "details": "EP / RHYTHM CULT / 2020"
+      "title": "Arzakc & Zylenia ",
+      "details": "LP / OCHOMEL / 2017"
     },
     {
       "title": "Sharon Highlights",
       "details": "EP / PRIMAVERA SOUND / 2013"
-    }
-  ],
-  "archive_items": [
-    {
-      "image": "/assets/WhatsApp Image 2026-07-13 at 19.22.10.jpeg",
-      "caption": "del dia de la pool"
     }
   ]
 }
