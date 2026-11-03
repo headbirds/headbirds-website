@@ -281,10 +281,10 @@ renderSection(location.hash.slice(1));
     const number = button.getAttribute('data-space-project');
     previousFocus = button;
     title.textContent = button.textContent.trim();
-    const description = projectData['spaces_project_' + number + '_description'];
+    const description = projectData[({1:'spaces_les_arcs_description',2:'spaces_lestrany_description',3:'spaces_corea_description'})[number]];
     paragraph.textContent = typeof description === 'string' ? description : '';
     paragraph.hidden = !paragraph.textContent.trim();
-    const photo = projectData['spaces_project_' + number + '_image'];
+    const photo = projectData[({1:'spaces_les_arcs_image',2:'spaces_lestrany_image',3:'spaces_corea_image'})[number]];
     if (typeof photo === 'string' && /^(https?:\/\/|\/?assets\/)/i.test(photo)) {
       image.src = photo;
       image.alt = title.textContent;
