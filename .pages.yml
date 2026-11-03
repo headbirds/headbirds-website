@@ -31,6 +31,7 @@ content:
       - name: footer_description
         label: Texto inferior
         type: text
+
       - name: about_subtitle
         label: About — Subtítulo
         type: string
@@ -46,9 +47,11 @@ content:
       - name: about_paragraph_3
         label: About — Párrafo 3
         type: text
+
       - name: music_subtitle
         label: Music Production — Subtítulo
         type: string
+
       - name: sessions_subtitle
         label: DJ Sets — Subtítulo
         type: string
@@ -58,6 +61,7 @@ content:
       - name: sessions_note
         label: DJ Sets — Nota
         type: text
+
       - name: spaces_subtitle
         label: Spaces — Subtítulo
         type: string
@@ -76,15 +80,42 @@ content:
       - name: spaces_name_3
         label: Spaces — Nombre 3
         type: string
+
+      # Ventana flotante de Les Arcs
+      - name: spaces_les_arcs_description
+        label: Les Arcs — Descripción de la ventana
+        type: text
+      - name: spaces_les_arcs_image
+        label: Les Arcs — Fotografía o logotipo
+        type: image
+
+      # Ventana flotante de L’Estrany
+      - name: spaces_lestrany_description
+        label: L’Estrany — Descripción de la ventana
+        type: text
+      - name: spaces_lestrany_image
+        label: L’Estrany — Fotografía o logotipo
+        type: image
+
+      # Ventana flotante de COREA
+      - name: spaces_corea_description
+        label: COREA — Descripción de la ventana
+        type: text
+      - name: spaces_corea_image
+        label: COREA — Fotografía o logotipo
+        type: image
+
       - name: archive_subtitle
         label: Archive — Subtítulo
         type: string
       - name: archive_note
         label: Archive — Nota
         type: text
+
       - name: booking_subtitle
         label: Booking — Subtítulo
         type: string
+
       - name: presskit_subtitle
         label: Press Kit — Subtítulo
         type: string
@@ -97,6 +128,7 @@ content:
       - name: presskit_file
         label: Archivo Press Kit
         type: file
+
       - name: music_releases
         label: Music Production — Lanzamientos
         type: object
@@ -108,6 +140,7 @@ content:
           - name: details
             label: Detalles
             type: string
+
       - name: sessions_items
         label: DJ Sets — Sesiones
         type: object
@@ -119,6 +152,7 @@ content:
           - name: url
             label: Enlace
             type: string
+
       - name: spaces_photos
         label: Spaces — Fotografías
         type: object
@@ -130,6 +164,7 @@ content:
           - name: caption
             label: Descripción
             type: string
+
       - name: archive_items
         label: Archive — Elementos
         type: object
