@@ -1,23 +1,23 @@
 {
   "artist_name": "HEADBIRDS",
   "header_phrase": "Something new through mixing",
-  "hero_note": "Music, places, ideas. One continuous practice.",
+  "hero_note": "Music composition and production. Places to dance. Ideas for art. One continuous practice",
   "hero_scribble": "Follow your curiosity ↗",
-  "hero_location": "BANYOLES - GIRONA",
+  "hero_location": "BANYOLES - GIRONA - SPAIN",
   "hero_photo": "/assets/portrait.jpg",
   "footer_description": "Records, selections, concepts, places and everything that happens in between",
-  "about_subtitle": "An ongoing practice in electronic music.",
-  "about_note": "Adapted from the HEADBIRDS press kit, with the broader artistic practice included.",
-  "about_paragraph_1": "For around two decades, HEADBIRDS has developed a sound that resists easy categorisation. House provides the warmth, electro introduces syncopation, and techno gives the music its physical force. The result moves between genres without settling into one.",
-  "about_paragraph_2": "Across EPs and albums including Kulturhaus and Atzar , that approach has travelled through clubs and festivals from Barcelona and Paris to New York, Hong Kong and Bangkok.",
-  "about_paragraph_3": "But the work extends beyond records and DJ sets. Creating spaces for music and for other artists — including Les Arcs, L’Estrany and COREA, among other projects — belongs to the same restless artistic impulse.",
-  "music_subtitle": "Original works. Ideas pressed into sound, vinyls, cassettes and digital media.",
-  "sessions_subtitle": "Records in conversation. Selections without boundaries.",
-  "sessions_description": "An open space for mixes, recordings and unexpected connections.",
-  "sessions_note": "Selected recordings will live here. No invented sessions, no calendar.",
-  "spaces_subtitle": "Sometimes making music means making room for it.",
-  "spaces_description": "Places, nights and encounters made from the same impulse — creating conditions for music, for other artists, for something to happen.",
-  "spaces_note": "Three among many expressions of an ongoing practice.",
+  "about_subtitle": "An ongoing practice in music, sound and creation",
+  "about_note": "Different sounds, different spaces, different ways of creating around music. Always driven by the same curiosity",
+  "about_paragraph_1": "For over two decades, Dani Guijarro has explored music as an open creative practice, moving freely between genres, formats and disciplines. From techno and ambient to classical music, from compositions for video games, theatre and sports to production work for other artists, his approach has never been defined by a single sound or style. What connects these different projects is a constant curiosity about sound, a desire to experiment and the belief that music can take many forms.",
+  "about_paragraph_2": "Across EPs and albums including Kulturhaus and Arzakc & Zylenia , that approach has travelled through clubs and festivals from Barcelona and Paris to New York, Hong Kong and Bangkok",
+  "about_paragraph_3": "But the work extends beyond records and DJ sets. Creating spaces for music and for other artists  — including Les Arcs, L’Estrany and COREA, among other projects — belongs to the same restless artistic impulse",
+  "music_subtitle": "Original works. Ideas pressed into sound, released on vinyl, cassette and digital formats",
+  "sessions_subtitle": "Records in conversation. Selections without boundaries",
+  "sessions_description": "An open space for mixes, recordings and unexpected connections",
+  "sessions_note": "Selected recordings will live here. No invented sessions, no calendar",
+  "spaces_subtitle": "Sometimes making music means making room for it",
+  "spaces_description": "Places, nights and encounters made from the same impulse — creating conditions for music, for other artists, for something to happen",
+  "spaces_note": "Three among many expressions of an ongoing practice",
   "spaces_name_1": "Les Arcs",
   "spaces_name_2": "L’Estrany",
   "spaces_name_3": "COREA",
@@ -25,25 +25,28 @@
   "spaces_les_arcs_image": "/assets/Les_Arcs_optimizada.webp",
   "spaces_lestrany_description": "L’ESTRANY - FESTIVAL DE MÚSICA INSÒLITA\n\nFor nine editions, this tiny festival transformed Pla de l’Estrany (Girona, Spain) into a place where music, people and imagination came together.\n\nWhat made it truly special was the collective spirit of the people behind it, its extraordinary locations and the almost magical atmosphere that emerged in each space.\n\nDriven by curiosity and an instinct for discovering new talent, the festival welcomed artists such as Rosalía, Orbe, Alizzz and Carles Viarnés long before they gained the recognition they enjoy today.\n\nMore than a festival, L’Estrany was a shared vision — a celebration of creativity, intuition and the belief that something extraordinary can happen when the right people come together in the right place.",
   "spaces_corea_description": "COREA — ROBADORS 23\n\nA serie of intimate DJ sessions held at the legendary Robadors 23, a small and welcoming venue in Barcelona’s Raval neighbourhood, deeply rooted in the city’s jazz and flamenco culture.\n\nBringing together some of the finest selectors from Barcelona and Catalonia, COREA offered each artist five hours to explore unexpected musical directions, take risks and build a journey beyond the conventions of a typical club set.\n\nArtists such as Alicia Carrera, DJ Gus and Abu Sou were part of a project where musical curiosity, careful selection and the closeness between DJ and audience created something genuinely special.\n\nMore than a series of parties, COREA was a celebration of the art of listening, sharing music and letting it unfold naturally.",
-  "archive_subtitle": "Fragments, images, traces. Not everything fits on a record.",
-  "archive_note": "Fragment 001. An archive that can keep growing.",
-  "booking_subtitle": "For performances, collaborations and other conversations.",
-  "presskit_subtitle": "Biography, selected releases, performances and press materials.",
-  "presskit_description": "A document for those who need the details.",
-  "presskit_note": "Original English press kit. The About text on this website is a shorter, updated interpretation.",
+  "archive_subtitle": "Fragments, images, traces. Not everything fits on a record",
+  "archive_note": "Fragment 001. An archive that can keep growing",
+  "booking_subtitle": "For performances, collaborations and other conversations",
+  "presskit_subtitle": "Biography, selected releases, performances and press materials",
+  "presskit_description": "A document for those who need the details",
+  "presskit_note": "Original English press kit. The About text on this website is a shorter, updated interpretation",
   "presskit_file": "HEADBIRDS_Press_Kit.pdf",
   "music_releases": [
     {
       "title": "Kulturhaus",
-      "details": "LP / RHYTHM CULT / 2022"
+      "details": "LP / RHYTHM CULT / 2022",
+      "url": "https://rhythmcult.bandcamp.com/album/kulturhaus-lp"
     },
     {
       "title": "Arzakc & Zylenia ",
-      "details": "LP / OCHOMEL / 2017"
+      "details": "LP / OCHOMEL / 2017",
+      "url": "https://headbirds.bandcamp.com/album/arzakc-zylenia"
     },
     {
       "title": "Sharon Highlights",
-      "details": "EP / PRIMAVERA SOUND / 2013"
+      "details": "EP / PRIMAVERA SOUND / 2013",
+      "url": "https://www.youtube.com/watch?v=OkhTNyGTyfU"
     }
   ]
 }
