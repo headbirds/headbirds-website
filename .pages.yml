@@ -140,6 +140,9 @@ content:
           - name: details
             label: Detalles
             type: string
+          - name: url
+            label: Enlace directo a Bandcamp
+            type: string
 
       - name: sessions_items
         label: DJ Sets — Sesiones
