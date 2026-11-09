@@ -93,9 +93,10 @@
       "url": "https://www.youtube.com/watch?v=OkhTNyGTyfU"
     }
   ],
-  "spaces_photos": [
+  "archive_items": [
     {
-      "caption": "L'Estrany Banyoles"
+      "image": "/assets/fotos archive/archive_01.webp",
+      "caption": "Al Konvent. Cal Rosal 2025"
     }
   ]
 }
