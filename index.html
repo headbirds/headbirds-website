@@ -353,30 +353,23 @@ header .mark,header .toplink{color:#f5f4ee}
 @media(max-width:720px){.spaces-logo-grid{grid-template-columns:1fr;gap:20px;max-width:310px;margin:-12px auto 55px}.spaces-logo-button img{height:190px}}
 
 
-/* Spaces gallery: larger arrows over photos on desktop, touch-friendly mobile */
-.space-carousel{position:relative}
-.space-carousel img{cursor:pointer;user-select:none;-webkit-user-drag:none;touch-action:pan-y}
-.space-carousel-controls{margin-top:8px;justify-content:center;min-height:22px}
-.space-carousel-controls #spacePrev,.space-carousel-controls #spaceNext{
-  position:absolute;top:0;bottom:30px;z-index:2;
-  display:flex;align-items:center;justify-content:center;
-  width:clamp(54px,18%,88px);padding:0;
-  font-size:36px;line-height:1;color:#fff;
-  background:linear-gradient(90deg,rgba(0,0,0,.28),transparent);
-  opacity:0;transition:opacity .2s ease;
-}
-.space-carousel-controls #spacePrev{left:0}
-.space-carousel-controls #spaceNext{right:0;background:linear-gradient(270deg,rgba(0,0,0,.28),transparent)}
+/* Spaces gallery — small controls below, hover arrows on desktop */
+.space-carousel{position:relative;margin:0 0 22px}
+.space-carousel-photo{position:relative}
+.space-carousel-photo img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain;margin:0;cursor:pointer;user-select:none;-webkit-user-drag:none;touch-action:pan-y}
+.space-carousel-controls{position:static;display:flex;align-items:center;justify-content:center;gap:22px;margin-top:12px;min-height:36px;font:11px 'DM Mono',monospace}
+.space-carousel-controls[hidden],.space-carousel[hidden]{display:none!important}
+.space-carousel-controls #spacePrev,.space-carousel-controls #spaceNext{position:static;display:inline-flex;align-items:center;justify-content:center;min-width:42px;width:42px;height:36px;padding:4px 10px;background:none;color:var(--ink);border:0;font:20px 'DM Mono',monospace;opacity:1;cursor:pointer}
+.space-carousel-controls #spacePrev:hover,.space-carousel-controls #spaceNext:hover{color:var(--red)}
+.space-carousel-hover-arrow{display:none}
+.space-carousel-hover-arrow[hidden]{display:none!important}
 @media(hover:hover) and (pointer:fine){
-  .space-carousel:hover .space-carousel-controls #spacePrev,
-  .space-carousel:hover .space-carousel-controls #spaceNext,
-  .space-carousel-controls #spacePrev:focus-visible,
-  .space-carousel-controls #spaceNext:focus-visible{opacity:1}
+  .space-carousel-hover-arrow{position:absolute;top:0;bottom:0;width:clamp(52px,18%,82px);z-index:2;display:flex;align-items:center;justify-content:center;border:0;color:white;font:38px 'DM Mono',monospace;cursor:pointer;opacity:0;transition:opacity .2s ease}
+  .space-carousel-hover-arrow.prev{left:0;background:linear-gradient(90deg,rgba(0,0,0,.35),transparent)}
+  .space-carousel-hover-arrow.next{right:0;background:linear-gradient(270deg,rgba(0,0,0,.35),transparent)}
+  .space-carousel-photo:hover .space-carousel-hover-arrow,.space-carousel-hover-arrow:focus-visible{opacity:1}
 }
-@media(hover:none), (pointer:coarse){
-  .space-carousel-controls #spacePrev,.space-carousel-controls #spaceNext{display:none}
-  .space-carousel img{cursor:default}
-}
+@media(hover:none), (pointer:coarse){.space-carousel-hover-arrow{display:none!important}}
 </style></head><body><header><a aria-label="HEADBIRDS home" class="mark" href="#home">HB.</a><span class="mono" data-content="header_phrase">An ongoing practice</span><button class="mono toplink" type="button" data-open="booking" style="background:none;border:0;border-bottom:1px solid currentColor;cursor:pointer">Contact ↗</button></header><main id="home"><div class="stage"><div class="name hand" data-content="artist_name">HEADBIRDS</div><img alt="HEADBIRDS portrait in red and green light" class="portrait" data-content="hero_photo" data-content-attr="src" src="assets/portrait.jpg"/><p class="tiny-note mono" data-content="hero_note">Music, places, ideas. One continuous practice.</p><button class="entry music" data-open="music"><span class="hand">Music</span><small>02 / original works ↗</small></button><button class="entry sessions" data-open="sessions"><span class="hand">DJ sets</span><small>03 / selections ↗</small></button><button class="entry spaces" data-open="spaces"><span class="hand">Spaces</span><small>04 / places ↗</small></button><button class="entry archive" data-open="archive"><span class="hand">Archive</span><small>05 / fragments ↗</small></button><button aria-label="Open booking" class="entry booking" data-open="booking"><span class="hand">Booking</span><small>06 / enquiries ↗</small></button><div class="scribble hand" data-content="hero_scribble">Follow your curiosity ↗</div><div class="stage-count mono" data-content="hero_location">BCN / ELSEWHERE</div><button aria-label="About" class="entry about-entry" data-open="about" type="button"><span>About</span><small>01 / biography ↗</small></button><button aria-label="Press Kit" class="entry presskit-entry" data-open="presskit" type="button"><span>Press Kit</span><small>07 / download ↗</small></button></div><div class="bottom-note"><p data-content="footer_description">Records, selections, places and everything that happens in between. No fixed order.</p><div class="footer-right"><nav class="social-links" aria-label="HEADBIRDS social profiles"><a href="https://www.instagram.com/headbirds/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://soundcloud.com/headbirds" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud" title="SoundCloud"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 13v5M5.5 11v7M8 10v8M10.5 8v10M13 7.5c1.3-1.6 3-2.3 4.7-2.1 2.8.3 4.3 2.6 4.3 5.1a4 4 0 0 1-.4 7.5H13"/></svg></a><a href="https://www.mixcloud.com/headbirds/" target="_blank" rel="noopener noreferrer" aria-label="Mixcloud" title="Mixcloud"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16.5a4.5 4.5 0 0 1 4.4-4.6c.7-3.3 3.3-5.4 6.6-5.4 3.1 0 5.6 2 6.1 4.8a3.6 3.6 0 0 1-.4 7.2H7.6A3.6 3.6 0 0 1 4 16.5Z"/><path d="M2 11c1.1-3.9 4.3-6.5 8.4-7"/></svg></a><a href="https://www.youtube.com/@danielguijarro8723" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3Z" fill="currentColor" stroke="none"/></svg></a><a href="https://headbirds.bandcamp.com/" target="_blank" rel="noopener noreferrer" aria-label="Bandcamp" title="Bandcamp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5h13l-5 14H3Z" fill="currentColor" stroke="none"/></svg></a></nav><span class="mono">HEADBIRDS © 2026</span></div></div></main>
 
 <section aria-label="Music" class="overlay" id="music"><div class="panel-head"><span class="mono">HEADBIRDS / 01</span><button class="close" data-close="">Close ✕</button></div><div class="panel"><h1 class="hand">Music</h1><p class="sub" data-content="music_subtitle">Original works. Ideas pressed into sound.</p><div data-list="music_releases"></div><div class="music-platform-links"><a class="link" href="https://headbirds.bandcamp.com/" rel="noopener" target="_blank">LISTEN ON BANDCAMP ↗</a><a class="link" href="https://www.youtube.com/@danielguijarro8723" rel="noopener noreferrer" target="_blank">LISTEN ON YOUTUBE ↗</a><a class="link" href="https://soundcloud.com/headbirds" rel="noopener noreferrer" target="_blank">LISTEN ON SOUNDCLOUD ↗</a><a class="link" href="https://tidal.com/artist/headbirds/4611661" rel="noopener noreferrer" target="_blank">LISTEN ON TIDAL ↗</a><a class="link" href="https://open.spotify.com/artist/4FDpyYV7YrYmiVgLw3sZ0g" rel="noopener noreferrer" target="_blank">LISTEN ON SPOTIFY ↗</a></div></div></section>
@@ -581,7 +574,11 @@ renderSection(location.hash.slice(1));
 
     <div id="spaceCarousel" class="space-carousel" hidden>
 
-       <img id="spaceNoteImage" alt="">
+       <div class="space-carousel-photo">
+         <img id="spaceNoteImage" alt="" title="Click to see next photograph">
+         <button id="spaceHoverPrev" class="space-carousel-hover-arrow prev" type="button" aria-label="Previous photograph">←</button>
+         <button id="spaceHoverNext" class="space-carousel-hover-arrow next" type="button" aria-label="Next photograph">→</button>
+       </div>
 
        <div id="spaceCarouselControls" class="space-carousel-controls" hidden>
 
@@ -658,13 +655,12 @@ renderSection(location.hash.slice(1));
 
 
   function showPhoto() {
-
     if (!photos.length) {
 
       carousel.hidden = true;
 
       image.removeAttribute('src');
-
+      controls.hidden = true;
       return;
 
     }
@@ -678,6 +674,8 @@ renderSection(location.hash.slice(1));
     counter.textContent = String(currentPhoto + 1).padStart(2, '0') + ' / ' + String(photos.length).padStart(2, '0');
 
     controls.hidden = photos.length < 2;
+    document.getElementById('spaceHoverPrev').hidden = photos.length < 2;
+    document.getElementById('spaceHoverNext').hidden = photos.length < 2;
 
   }
 
@@ -754,6 +752,8 @@ renderSection(location.hash.slice(1));
   prev.addEventListener('click', () => movePhoto(-1));
 
   next.addEventListener('click', () => movePhoto(1));
+  document.getElementById('spaceHoverPrev').addEventListener('click', () => movePhoto(-1));
+  document.getElementById('spaceHoverNext').addEventListener('click', () => movePhoto(1));
 
   // Click the image to advance. On touchscreens, swipe horizontally.
   let suppressImageClick = false;
