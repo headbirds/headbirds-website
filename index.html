@@ -2,817 +2,1656 @@
 
 
 
+
+
+
+
 <html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>HEADBIRDS — Open Archive V11</title><meta content="HEADBIRDS — music, sessions, spaces and an open archive." name="description"/><style>
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
+
+
 :root{--paper:#f5f4ee;--ink:#171816;--soft:#6d6c65;--line:#d5d3ca;--red:#ad332b}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif}button,a{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}::selection{background:#c8e5ba} .mono{font:10px 'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase}.hand{font-family:'IBM Plex Mono','Courier New',monospace;font-weight:400;letter-spacing:-.085em}header{height:85px;display:flex;align-items:center;justify-content:space-between;padding:0 5.5vw;position:relative;z-index:3}.mark{font-size:13px;font-weight:700;letter-spacing:-.06em}.toplink{border-bottom:1px solid currentColor;padding-bottom:4px}.stage{min-height:850px;height:calc(100svh - 85px);max-height:1100px;position:relative;overflow:hidden}.name{position:absolute;left:5.4%;top:5%;font-size:clamp(64px,12vw,190px);line-height:.9;z-index:2;white-space:nowrap;transform:rotate(-3deg)}.portrait{position:absolute;left:43%;top:18%;width:34%;height:56%;object-fit:cover;object-position:center;filter:saturate(.91)}.tiny-note{position:absolute;left:5.7%;top:31%;width:195px;line-height:1.8;color:var(--soft)}.entry{position:absolute;background:none;border:0;padding:0;line-height:1;z-index:3;text-align:left;transition:transform .25s,color .25s}.entry span{display:block;font-size:clamp(40px,6vw,95px)}.entry small{display:block;margin-top:10px;font:10px 'DM Mono',monospace;letter-spacing:.07em;color:var(--soft);white-space:nowrap}.entry:hover,.entry:focus-visible{color:var(--red);transform:rotate(0deg) scale(1.055);outline:none}.music{top:43%;left:9%;transform:rotate(-8deg)}.sessions{top:28%;right:5%;transform:rotate(7deg)}.spaces{top:71%;left:34%;transform:rotate(-6deg)}.archive{top:73%;right:6%;transform:rotate(6deg)}.scribble{position:absolute;left:7%;bottom:8%;font-size:12px;transform:rotate(-5deg);color:var(--soft)}.stage-count{position:absolute;right:5.6%;bottom:5%;color:var(--soft)}.bottom-note{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);margin:0 5.5vw;padding:24px 0 55px;color:var(--soft)}.bottom-note p{max-width:390px;margin:0;font-size:12px;line-height:1.7}.overlay{position:fixed;inset:0;background:var(--paper);z-index:20;overflow:auto;display:none}.overlay.open{display:block;animation:appear .35s ease}@keyframes appear{from{opacity:0}to{opacity:1}}.panel-head{display:flex;justify-content:space-between;align-items:center;padding:30px 6vw}.close{border:0;background:none;padding:8px;font:11px 'DM Mono',monospace}.close:hover{color:var(--red)}.panel{max-width:1100px;margin:3vh auto 0;padding:0 6vw 90px}.panel h1{font-size:clamp(90px,15vw,190px);line-height:1;margin:0 0 25px;transform:rotate(-3deg);font-weight:400}.panel .sub{font-size:clamp(19px,2.7vw,30px);max-width:570px;line-height:1.4;font-weight:400;margin:10px 0 75px}.release{display:grid;grid-template-columns:40px 1fr auto;gap:18px;align-items:baseline;padding:23px 0;border-top:1px solid var(--line)}.release strong{font-size:clamp(21px,3vw,38px);font-weight:500;letter-spacing:-.05em}.release em{font:10px 'DM Mono',monospace;font-style:normal;color:var(--soft)}.panel .link{display:inline-block;margin-top:45px;border-bottom:1px solid var(--ink);padding-bottom:7px;font:11px 'DM Mono',monospace}.panel-copy{font-size:clamp(21px,3.4vw,40px);line-height:1.5;max-width:850px;letter-spacing:-.04em}.names{margin-top:90px;display:flex;gap:3vw;flex-wrap:wrap;align-items:center}.names span{font-size:clamp(35px,5.5vw,76px)}.names span:nth-child(2){transform:rotate(5deg)}.names span:nth-child(3){transform:rotate(-6deg)}.photo-panel{max-width:460px;width:100%;margin-top:50px;display:block}.archive-image{width:min(470px,80%);display:block;margin:0 auto 40px}.quiet{color:var(--soft);font-size:12px;line-height:1.8;max-width:440px}.mobilehint{display:none}@media(max-width:720px){header{height:70px;padding:0 6vw}.stage{height:auto;min-height:890px;max-height:none}.name{left:5%;top:5%;font-size:clamp(58px,15vw,100px)}.portrait{left:29%;top:22%;width:62%;height:34%}.tiny-note{top:17%;left:6%;width:160px;font-size:9px}.entry span{font-size:clamp(42px,12vw,76px)}.entry small{font-size:8px}.music{top:37%;left:5%}.sessions{top:54%;right:5%}.spaces{top:68%;left:8%}.archive{top:80%;right:8%}.scribble{bottom:3%;left:6%}.stage-count{bottom:3%}.bottom-note{margin:0 6vw;flex-direction:column}.panel{margin-top:4vh}.panel h1{font-size:clamp(68px,18vw,115px)}.panel .sub{margin-bottom:45px}.release{grid-template-columns:25px 1fr;gap:12px}.release em{grid-column:2}.names{gap:22px}.names span{font-size:45px}.mobilehint{display:block}}
+
+
 
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 
 
+
+
+
+
 /* V8 — photograph-led, reduced whitespace */
+
+
 
 header{height:64px;padding:0 3.5vw}
 
+
+
 .stage{height:calc(100svh - 64px);min-height:690px;max-height:1050px;background:#171c17}
+
+
 
 .portrait{left:19%;top:0;width:81%;height:100%;object-fit:cover;object-position:50% 44%;filter:saturate(.95) contrast(1.06)}
 
+
+
 .stage:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(12,16,12,.76),rgba(12,16,12,.18) 42%,rgba(12,16,12,.08) 76%,rgba(12,16,12,.32));z-index:1}
+
+
 
 .name{left:3.5%;top:6%;font-size:clamp(56px,10.4vw,165px);color:#f5f4ee;transform:none;letter-spacing:-.095em;z-index:3}
 
+
+
 .tiny-note{left:4%;top:29%;color:#e4e3d9;z-index:3}
+
+
 
 .entry{color:#f5f4ee;z-index:4;transform:none!important;text-shadow:0 1px 15px rgba(0,0,0,.25)}
 
+
+
 .entry span{font-size:clamp(31px,4.5vw,70px)}
+
+
 
 .entry small{color:#e4e3d9}
 
+
+
 .entry:hover,.entry:focus-visible{color:#f4c9a8;transform:translateY(-4px)!important}
+
+
 
 .music{left:4%;top:48%}.sessions{right:6%;top:31%}.spaces{left:38%;top:72%}.archive{right:5%;top:81%}
 
+
+
 .scribble,.stage-count{color:#e4e3d9;z-index:3}.scribble{left:4%;bottom:5%;transform:none}.stage-count{right:4%;bottom:4%}
 
+
+
 .bottom-note{margin:0 3.5vw;padding:18px 0 28px}
+
+
 
 @media(max-width:720px){header{height:60px}.stage{height:calc(100svh - 60px);min-height:750px}.portrait{left:0;top:0;width:100%;height:100%;object-position:55% center}.stage:after{background:linear-gradient(180deg,rgba(8,12,9,.55),rgba(8,12,9,.05) 35%,rgba(8,12,9,.4) 70%,rgba(8,12,9,.72))}.name{left:5%;top:5%;font-size:clamp(49px,12vw,88px)}.tiny-note{top:18%;left:6%;font-size:9px}.entry span{font-size:clamp(30px,8vw,55px)}.music{left:5%;top:41%}.sessions{right:5%;top:53%}.spaces{left:9%;top:67%}.archive{right:7%;top:78%}.scribble{bottom:3%;left:5%}.stage-count{bottom:3%}}
 
 
 
+
+
+
+
 /* V13 — stronger, still discreet panel close control */
+
+
 
 .panel-head .close{font-size:16px;letter-spacing:.035em;padding:12px 14px;min-height:44px;min-width:85px;display:inline-flex;align-items:center;justify-content:center;gap:8px}
 
+
+
 .panel-head .close:hover,.panel-head .close:focus-visible{color:var(--red);text-decoration:underline;text-underline-offset:5px}
+
+
 
 .booking-form .hidden-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
+
+
+.talks-photo{margin:30px 0 32px;max-width:770px}.talks-photo img{display:block;width:100%;height:auto;object-fit:contain}.talks-photo+.talks-formats{margin-top:0}
 </style><style>
+
+
 
 /* v7: restrained typewriter composition, no rotations or ornamental scribbles */
 
+
+
 .name,.entry,.entry:hover,.entry:focus-visible,.panel h1,.names span:nth-child(2),.names span:nth-child(3){transform:none!important}
+
+
 
 .name{font-size:clamp(54px,10vw,155px);top:8%;letter-spacing:-.095em}
 
+
+
 .entry span{font-family:'IBM Plex Mono','Courier New',monospace;font-size:clamp(19px,2.7vw,43px);font-weight:400;letter-spacing:-.075em;line-height:1.18}
+
+
 
 .entry small{font-size:10px;margin-top:9px}
 
+
+
 .entry{padding:9px 3px;max-width:340px;transition:color .2s,opacity .2s}
+
+
 
 .entry:hover,.entry:focus-visible{color:var(--red);opacity:.85;text-decoration:underline;text-underline-offset:8px}
 
+
+
 .portrait{left:40%;top:26%;width:31%;height:48%}
+
+
 
 .music{top:39%;left:7%}.sessions{top:30%;right:5%}.spaces{top:75%;left:17%}.archive{top:68%;right:5%}.booking{top:86%;right:30%}
 
+
+
 .scribble{display:none}.stage-count{bottom:3%}
+
+
 
 .panel h1{font-size:clamp(50px,8vw,112px);letter-spacing:-.085em;overflow-wrap:anywhere}
 
+
+
 .names span{font-family:'IBM Plex Mono',monospace;font-size:clamp(25px,3vw,43px);letter-spacing:-.07em}
 
+
+
 .booking-form{max-width:570px;display:grid;gap:24px}.booking-form label{display:grid;gap:10px;font:11px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em}.booking-form input,.booking-form textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--ink);border-radius:0;padding:13px 0;color:var(--ink);font:16px 'IBM Plex Mono',monospace;outline-offset:5px}.booking-form button{justify-self:start;background:transparent;border:0;border-bottom:1px solid;padding:12px 0;font:12px 'DM Mono',monospace}
+
+
 
 @media(max-width:720px){.stage{min-height:920px}.name{top:6%;font-size:clamp(39px,10.3vw,80px)}.portrait{left:31%;top:23%;width:62%;height:32%}.tiny-note{top:17%}.entry span{font-size:clamp(20px,5.3vw,31px)}.entry small{font-size:8px}.music{top:38%;left:5%}.sessions{top:57%;right:6%}.spaces{top:69%;left:7%}.archive{top:78%;right:6%}.booking{top:87%;left:19%;right:auto}.stage-count{bottom:1%}}
 
 
 
+
+
+
+
 /* V13 — stronger, still discreet panel close control */
+
+
 
 .panel-head .close{font-size:16px;letter-spacing:.035em;padding:12px 14px;min-height:44px;min-width:85px;display:inline-flex;align-items:center;justify-content:center;gap:8px}
 
+
+
 .panel-head .close:hover,.panel-head .close:focus-visible{color:var(--red);text-decoration:underline;text-underline-offset:5px}
+
+
 
 .booking-form .hidden-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
+
+
 </style><style>
+
+
 
 /* V9: immersive photograph, small editorial navigation */
 
+
+
 header{position:absolute;top:0;left:0;right:0;background:transparent;color:#f5f4ee;z-index:10;height:58px;padding:0 3vw}
+
+
 
 header .mark,header .toplink{color:#f5f4ee}
 
+
+
 .stage{height:100svh;min-height:760px;max-height:none;background:#151713}
+
+
 
 .portrait{left:0!important;top:0!important;width:100%!important;height:100%!important;object-fit:cover;object-position:center 43%;filter:saturate(.99) contrast(1.03)}
 
+
+
 .stage:after{background:linear-gradient(90deg,rgba(4,9,6,.35),transparent 38%,rgba(5,8,6,.18)),linear-gradient(180deg,rgba(4,7,5,.32),transparent 25%,transparent 70%,rgba(4,7,5,.40))}
+
+
 
 .name{left:3%;top:10%;font-size:clamp(48px,9.5vw,155px);letter-spacing:-.09em;z-index:4;text-shadow:0 2px 22px rgba(0,0,0,.18)}
 
+
+
 .tiny-note{top:auto;bottom:7%;left:3%;font-size:10px;width:190px;z-index:4}
+
+
 
 .entry{z-index:5;color:#f5f4ee;max-width:none;padding:10px 8px;text-shadow:0 1px 13px rgba(0,0,0,.55)}
 
+
+
 .entry span{font-size:clamp(16px,1.8vw,28px)!important;letter-spacing:-.045em;white-space:nowrap}
+
+
 
 .entry small{font-size:9px!important;color:#efeee6;opacity:.83;margin-top:5px}
 
+
+
 .entry:hover,.entry:focus-visible{color:#f9e2c5;opacity:1;transform:translateY(-2px)!important}
+
+
 
 .about-entry{left:4%;top:38%}.music{left:24%;top:51%}.sessions{right:6%;top:31%}.spaces{left:48%;top:70%}.archive{right:5%;top:79%}.booking{left:5%;top:75%}.presskit-entry{right:24%;top:51%}
 
+
+
 .stage-count{right:3%;bottom:4%;z-index:5}
+
+
 
 .about-body{max-width:770px;font-size:clamp(17px,2vw,25px);line-height:1.7;letter-spacing:-.025em}
 
+
+
 .about-body p{margin:0 0 1.6em}.about-body em{font-style:italic}
+
+
 
 @media(max-width:720px){header{height:56px;padding:0 5vw}.stage{height:100svh;min-height:820px}.portrait{object-position:54% center}.stage:after{background:linear-gradient(180deg,rgba(0,0,0,.38),transparent 33%,rgba(0,0,0,.20) 53%,rgba(0,0,0,.60))}.name{left:5%;top:10%;font-size:clamp(42px,10vw,82px)}.tiny-note{bottom:2%;left:5%;font-size:9px}.entry span{font-size:clamp(17px,4.4vw,24px)!important}.entry small{font-size:8px!important}.about-entry{left:5%;top:30%}.music{left:28%;top:42%}.sessions{right:5%;top:33%}.spaces{left:8%;top:58%}.archive{right:7%;top:70%}.booking{left:5%;top:80%}.presskit-entry{right:9%;top:86%}.stage-count{display:none}.about-body{font-size:17px}}
 
 
 
+
+
+
+
 /* V13 — stronger, still discreet panel close control */
+
+
 
 .panel-head .close{font-size:16px;letter-spacing:.035em;padding:12px 14px;min-height:44px;min-width:85px;display:inline-flex;align-items:center;justify-content:center;gap:8px}
 
+
+
 .panel-head .close:hover,.panel-head .close:focus-visible{color:var(--red);text-decoration:underline;text-underline-offset:5px}
+
+
 
 .booking-form .hidden-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
+
+
 </style><style>
+
+
 
 /* V11 — smaller artist name, photograph stays dominant */
 
+
+
 .stage:after{background:linear-gradient(90deg,rgba(3,8,5,.66) 0%,rgba(3,8,5,.39) 34%,rgba(3,8,5,.03) 69%),linear-gradient(180deg,rgba(0,0,0,.25),transparent 28%,transparent 75%,rgba(0,0,0,.22))}
+
+
 
 .name{top:13%;left:5%;font-size:clamp(37px,6.1vw,98px)}
 
+
+
 .entry{left:5%!important;right:auto!important;width:max-content;top:auto!important;bottom:auto!important;padding:5px 2px;text-align:left}
+
+
 
 .entry span{font-size:clamp(15px,1.52vw,22px)!important;letter-spacing:-.025em}
 
+
+
 .entry small{display:none}
+
+
 
 .about-entry{top:40%!important}
 
+
+
 .music{top:46.5%!important}
+
+
 
 .sessions{top:53%!important}
 
+
+
 .spaces{top:59.5%!important}
+
+
 
 .archive{top:66%!important}
 
+
+
 .booking{top:72.5%!important}
+
+
 
 .presskit-entry{top:79%!important}
 
+
+
 .entry:hover,.entry:focus-visible{transform:translateX(7px)!important;text-decoration:none}
+
+
 
 .entry:hover span,.entry:focus-visible span{border-bottom:1px solid currentColor}
 
+
+
 .tiny-note{display:none}
+
+
 
 @media(max-width:720px){
 
- .stage{min-height:720px}
 
- .portrait{object-position:57% center}
 
- .stage:after{background:linear-gradient(90deg,rgba(2,6,4,.68),rgba(2,6,4,.16) 80%),linear-gradient(180deg,rgba(0,0,0,.26),transparent 45%,rgba(0,0,0,.26))}
+ .stage{min-height:720px}
 
- .name{top:16%;left:5%;font-size:clamp(32px,7.4vw,56px)}
 
- .entry{left:6%!important}
 
- .entry span{font-size:clamp(16px,4vw,21px)!important}
+ .portrait{object-position:57% center}
 
- .about-entry{top:39%!important}.music{top:46%!important}.sessions{top:53%!important}.spaces{top:60%!important}.archive{top:67%!important}.booking{top:74%!important}.presskit-entry{top:81%!important}
+
+
+ .stage:after{background:linear-gradient(90deg,rgba(2,6,4,.68),rgba(2,6,4,.16) 80%),linear-gradient(180deg,rgba(0,0,0,.26),transparent 45%,rgba(0,0,0,.26))}
+
+
+
+ .name{top:16%;left:5%;font-size:clamp(32px,7.4vw,56px)}
+
+
+
+ .entry{left:6%!important}
+
+
+
+ .entry span{font-size:clamp(16px,4vw,21px)!important}
+
+
+
+ .about-entry{top:39%!important}.music{top:46%!important}.sessions{top:53%!important}.spaces{top:60%!important}.archive{top:67%!important}.booking{top:74%!important}.presskit-entry{top:81%!important}
+
+
 
 }
 
 
 
+
+
+
+
 /* V13 — stronger, still discreet panel close control */
+
+
 
 .panel-head .close{font-size:16px;letter-spacing:.035em;padding:12px 14px;min-height:44px;min-width:85px;display:inline-flex;align-items:center;justify-content:center;gap:8px}
 
+
+
 .panel-head .close:hover,.panel-head .close:focus-visible{color:var(--red);text-decoration:underline;text-underline-offset:5px}
+
+
 
 .booking-form .hidden-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
+
+
 </style><style>
+
+
 
 /* V12: only additions to interior sections; original V11 styles remain unchanged */
 
+
+
 .cms-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:22px;margin:36px 0}
+
+
 
 .cms-gallery figure{margin:0}.cms-gallery img{display:block;width:100%;height:auto;max-height:560px;object-fit:cover}
 
+
+
 .cms-gallery figcaption{margin-top:12px;font:10px 'DM Mono',monospace;line-height:1.7;color:var(--soft)}
+
+
 
 .cms-items{margin:38px 0}.cms-item{border-top:1px solid var(--line);padding:22px 0}.cms-item strong{display:block;font-size:clamp(19px,2.5vw,32px);font-weight:500}.cms-item a{display:inline-block;margin-top:8px;font:11px 'DM Mono',monospace;text-decoration:underline}
 
 
 
+
+
+
+
 /* V13 — stronger, still discreet panel close control */
+
+
 
 .panel-head .close{font-size:16px;letter-spacing:.035em;padding:12px 14px;min-height:44px;min-width:85px;display:inline-flex;align-items:center;justify-content:center;gap:8px}
 
+
+
 .panel-head .close:hover,.panel-head .close:focus-visible{color:var(--red);text-decoration:underline;text-underline-offset:5px}
+
+
 
 .booking-form .hidden-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
 
 
+
+
+
+
 /* HEADBIRDS — footer social links, embedded SVG icons */
+
+
 
 .bottom-note .social-links{display:flex;align-items:center;justify-content:flex-end;gap:20px;flex-wrap:wrap;margin-left:auto}
 
+
+
 .bottom-note .social-links a{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;color:var(--ink);opacity:.85;transition:opacity .2s ease,transform .2s ease}
+
+
 
 .bottom-note .social-links a:hover,.bottom-note .social-links a:focus-visible{opacity:1;transform:translateY(-2px)}
 
+
+
 .bottom-note .social-links svg{display:block;width:21px;height:21px;flex:none}
 
+
+
 .bottom-note .footer-right{display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:flex-end}
+
+
 
 @media(max-width:720px){.bottom-note .footer-right{justify-content:space-between;gap:20px}.bottom-note .social-links{margin-left:0;gap:18px}}
 
 
 
+
+
+
+
 /* HEADBIRDS — persistent CLOSE control inside scrolling sections */
+
+
 
 .overlay .panel-head{
 
-  position:sticky;
 
-  top:0;
 
-  z-index:30;
+  position:sticky;
 
-  background:var(--paper);
 
-  padding:18px 6vw;
 
-  min-height:76px;
+  top:0;
+
+
+
+  z-index:30;
+
+
+
+  background:var(--paper);
+
+
+
+  padding:18px 6vw;
+
+
+
+  min-height:76px;
+
+
 
 }
+
+
 
 .overlay .panel-head .close{
 
-  font-size:19px;
 
-  line-height:1.2;
 
-  min-height:48px;
+  font-size:19px;
 
-  min-width:105px;
 
-  padding:12px 14px;
 
-  white-space:nowrap;
+  line-height:1.2;
+
+
+
+  min-height:48px;
+
+
+
+  min-width:105px;
+
+
+
+  padding:12px 14px;
+
+
+
+  white-space:nowrap;
+
+
 
 }
+
+
 
 @media(max-width:720px){
 
-  .overlay .panel-head{padding:12px 5vw;min-height:68px}
 
-  .overlay .panel-head .close{font-size:18px;min-height:46px}
+
+  .overlay .panel-head{padding:12px 5vw;min-height:68px}
+
+
+
+  .overlay .panel-head .close{font-size:18px;min-height:46px}
+
+
 
 }
+
+
+
+
 
 
 
 /* Spaces — discreet floating project notes */
 
+
+
 .names .space-project-trigger{font:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;text-align:left}
+
+
 
 .names .space-project-trigger:hover{color:var(--red)}
 
+
+
 .names .space-project-trigger:focus-visible{outline:1px solid currentColor;outline-offset:7px}
+
+
 
 .space-note-shade{position:fixed;inset:0;z-index:70;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(12,15,12,.28)}
 
+
+
 .space-note-shade.visible{display:flex}
+
+
 
 .space-note{position:relative;background:var(--paper);color:var(--ink);width:min(460px,100%);max-height:calc(100dvh - 36px);overflow:auto;padding:35px 30px 32px;border:1px solid var(--line);box-shadow:0 12px 38px rgba(0,0,0,.10)}
 
+
+
 .space-note h2{font:400 clamp(25px,4vw,39px) 'IBM Plex Mono',monospace;letter-spacing:-.065em;margin:0 40px 22px 0}
+
+
 
 .space-note .space-note-x{position:absolute;right:14px;top:12px;background:transparent;border:0;color:var(--ink);font:24px 'DM Mono',monospace;line-height:1;padding:8px;cursor:pointer}
 
+
+
 .space-note .space-note-x:hover{color:var(--red)}
+
+
 
 .space-note img{display:block;width:100%;height:auto;max-height:310px;object-fit:contain;margin:0 0 22px}
 
+
+
 .space-note img[hidden],.space-note p[hidden]{display:none}
+
+
 
 .space-note p{font:15px/1.75 Manrope,Arial,sans-serif;white-space:pre-line;margin:0}
 
+
+
 @media(max-width:720px){.space-note{padding:31px 22px 25px}.space-note .space-note-x{right:9px;top:8px}}
+
+
 
 .mixcloud-embed{width:100%;max-width:800px;margin:36px 0 0}.mixcloud-embed iframe{display:block;width:100%;border:0;background:transparent}@media(max-width:720px){.mixcloud-embed iframe{height:166px}}
 
 
 
+
+
+
+
 /* Spaces — photo carousel */
+
+
 
 .space-carousel{position:relative;margin:0 0 22px}
 
+
+
 .space-carousel img{display:block;width:100%;max-height:340px;object-fit:contain;margin:0}
+
+
 
 .space-carousel-controls{display:flex;align-items:center;justify-content:space-between;margin-top:12px;font:11px 'DM Mono',monospace}
 
+
+
 .space-carousel-controls button{background:none;border:0;padding:8px 12px;color:var(--ink);font:inherit;cursor:pointer}
+
+
 
 .space-carousel-controls button:hover,.space-carousel-controls button:focus-visible{color:var(--red)}
 
+
+
 .space-carousel-controls button:disabled{opacity:.25;cursor:default}
 
+
+
 .space-carousel[hidden],.space-carousel-controls[hidden]{display:none}
+
+
 
 .music-platform-links{display:flex;flex-wrap:wrap;column-gap:25px;row-gap:14px;align-items:baseline;margin-top:45px}.music-platform-links .link{margin-top:0}@media(max-width:720px){.music-platform-links{flex-direction:column;align-items:flex-start;gap:14px}}
 
 
 
+
+
+
+
 /* Spaces — three centered, clickable project cover images */
+
+
 
 .spaces-logo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,3vw,34px);align-items:center;max-width:960px;margin:-30px auto 75px}
 
+
+
 .spaces-logo-button{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;padding:10px;background:transparent;border:0;color:var(--ink);cursor:pointer;transition:opacity .2s ease,transform .2s ease}
+
+
 
 .spaces-logo-button img{display:block;width:100%;height:clamp(140px,19vw,245px);object-fit:contain}
 
+
+
 .spaces-logo-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+
 
 .spaces-logo-button:hover{opacity:.7;transform:translateY(-4px)}
 
+
+
 .spaces-logo-button:focus-visible{outline:1px solid var(--ink);outline-offset:5px}
+
+
 
 @media(max-width:720px){.spaces-logo-grid{grid-template-columns:1fr;gap:20px;max-width:310px;margin:-12px auto 55px}.spaces-logo-button img{height:190px}}
 
 
-/* Spaces gallery — small controls below, hover arrows on desktop */
-.space-carousel{position:relative;margin:0 0 22px}
-.space-carousel-photo{position:relative}
-.space-carousel-photo img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain;margin:0;cursor:pointer;user-select:none;-webkit-user-drag:none;touch-action:pan-y}
-.space-carousel-controls{position:static;display:flex;align-items:center;justify-content:center;gap:22px;margin-top:12px;min-height:36px;font:11px 'DM Mono',monospace}
-.space-carousel-controls[hidden],.space-carousel[hidden]{display:none!important}
-.space-carousel-controls #spacePrev,.space-carousel-controls #spaceNext{position:static;display:inline-flex;align-items:center;justify-content:center;min-width:42px;width:42px;height:36px;padding:4px 10px;background:none;color:var(--ink);border:0;font:20px 'DM Mono',monospace;opacity:1;cursor:pointer}
-.space-carousel-controls #spacePrev:hover,.space-carousel-controls #spaceNext:hover{color:var(--red)}
-.space-carousel-hover-arrow{display:none}
-.space-carousel-hover-arrow[hidden]{display:none!important}
-@media(hover:hover) and (pointer:fine){
-  .space-carousel-hover-arrow{position:absolute;top:0;bottom:0;width:clamp(52px,18%,82px);z-index:2;display:flex;align-items:center;justify-content:center;border:0;color:white;font:38px 'DM Mono',monospace;cursor:pointer;opacity:0;transition:opacity .2s ease}
-  .space-carousel-hover-arrow.prev{left:0;background:linear-gradient(90deg,rgba(0,0,0,.35),transparent)}
-  .space-carousel-hover-arrow.next{right:0;background:linear-gradient(270deg,rgba(0,0,0,.35),transparent)}
-  .space-carousel-photo:hover .space-carousel-hover-arrow,.space-carousel-hover-arrow:focus-visible{opacity:1}
-}
-@media(hover:none), (pointer:coarse){.space-carousel-hover-arrow{display:none!important}}
-</style></head><body><header><a aria-label="HEADBIRDS home" class="mark" href="#home">HB.</a><span class="mono" data-content="header_phrase">An ongoing practice</span><button class="mono toplink" type="button" data-open="booking" style="background:none;border:0;border-bottom:1px solid currentColor;cursor:pointer">Contact ↗</button></header><main id="home"><div class="stage"><div class="name hand" data-content="artist_name">HEADBIRDS</div><img alt="HEADBIRDS portrait in red and green light" class="portrait" data-content="hero_photo" data-content-attr="src" src="assets/portrait.jpg"/><p class="tiny-note mono" data-content="hero_note">Music, places, ideas. One continuous practice.</p><button class="entry music" data-open="music"><span class="hand">Music</span><small>02 / original works ↗</small></button><button class="entry sessions" data-open="sessions"><span class="hand">DJ sets</span><small>03 / selections ↗</small></button><button class="entry spaces" data-open="spaces"><span class="hand">Spaces</span><small>04 / places ↗</small></button><button class="entry archive" data-open="archive"><span class="hand">Archive</span><small>05 / fragments ↗</small></button><button aria-label="Open booking" class="entry booking" data-open="booking"><span class="hand">Booking</span><small>06 / enquiries ↗</small></button><div class="scribble hand" data-content="hero_scribble">Follow your curiosity ↗</div><div class="stage-count mono" data-content="hero_location">BCN / ELSEWHERE</div><button aria-label="About" class="entry about-entry" data-open="about" type="button"><span>About</span><small>01 / biography ↗</small></button><button aria-label="Press Kit" class="entry presskit-entry" data-open="presskit" type="button"><span>Press Kit</span><small>07 / download ↗</small></button></div><div class="bottom-note"><p data-content="footer_description">Records, selections, places and everything that happens in between. No fixed order.</p><div class="footer-right"><nav class="social-links" aria-label="HEADBIRDS social profiles"><a href="https://www.instagram.com/headbirds/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://soundcloud.com/headbirds" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud" title="SoundCloud"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 13v5M5.5 11v7M8 10v8M10.5 8v10M13 7.5c1.3-1.6 3-2.3 4.7-2.1 2.8.3 4.3 2.6 4.3 5.1a4 4 0 0 1-.4 7.5H13"/></svg></a><a href="https://www.mixcloud.com/headbirds/" target="_blank" rel="noopener noreferrer" aria-label="Mixcloud" title="Mixcloud"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16.5a4.5 4.5 0 0 1 4.4-4.6c.7-3.3 3.3-5.4 6.6-5.4 3.1 0 5.6 2 6.1 4.8a3.6 3.6 0 0 1-.4 7.2H7.6A3.6 3.6 0 0 1 4 16.5Z"/><path d="M2 11c1.1-3.9 4.3-6.5 8.4-7"/></svg></a><a href="https://www.youtube.com/@danielguijarro8723" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3Z" fill="currentColor" stroke="none"/></svg></a><a href="https://headbirds.bandcamp.com/" target="_blank" rel="noopener noreferrer" aria-label="Bandcamp" title="Bandcamp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5h13l-5 14H3Z" fill="currentColor" stroke="none"/></svg></a></nav><span class="mono">HEADBIRDS © 2026</span></div></div></main>
 
-<section aria-label="Music" class="overlay" id="music"><div class="panel-head"><span class="mono">HEADBIRDS / 01</span><button class="close" data-close="">Close ✕</button></div><div class="panel"><h1 class="hand">Music</h1><p class="sub" data-content="music_subtitle">Original works. Ideas pressed into sound.</p><div data-list="music_releases"></div><div class="music-platform-links"><a class="link" href="https://headbirds.bandcamp.com/" rel="noopener" target="_blank">LISTEN ON BANDCAMP ↗</a><a class="link" href="https://www.youtube.com/@danielguijarro8723" rel="noopener noreferrer" target="_blank">LISTEN ON YOUTUBE ↗</a><a class="link" href="https://soundcloud.com/headbirds" rel="noopener noreferrer" target="_blank">LISTEN ON SOUNDCLOUD ↗</a><a class="link" href="https://tidal.com/artist/headbirds/4611661" rel="noopener noreferrer" target="_blank">LISTEN ON TIDAL ↗</a><a class="link" href="https://open.spotify.com/artist/4FDpyYV7YrYmiVgLw3sZ0g" rel="noopener noreferrer" target="_blank">LISTEN ON SPOTIFY ↗</a></div></div></section>
+
+
+/* Spaces gallery — small controls below, hover arrows on desktop */
+
+.space-carousel{position:relative;margin:0 0 22px}
+
+.space-carousel-photo{position:relative}
+
+.space-carousel-photo img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain;margin:0;cursor:pointer;user-select:none;-webkit-user-drag:none;touch-action:pan-y}
+
+.space-carousel-controls{position:static;display:flex;align-items:center;justify-content:center;gap:22px;margin-top:12px;min-height:36px;font:11px 'DM Mono',monospace}
+
+.space-carousel-controls[hidden],.space-carousel[hidden]{display:none!important}
+
+.space-carousel-controls #spacePrev,.space-carousel-controls #spaceNext{position:static;display:inline-flex;align-items:center;justify-content:center;min-width:42px;width:42px;height:36px;padding:4px 10px;background:none;color:var(--ink);border:0;font:20px 'DM Mono',monospace;opacity:1;cursor:pointer}
+
+.space-carousel-controls #spacePrev:hover,.space-carousel-controls #spaceNext:hover{color:var(--red)}
+
+.space-carousel-hover-arrow{display:none}
+
+.space-carousel-hover-arrow[hidden]{display:none!important}
+
+@media(hover:hover) and (pointer:fine){
+
+  .space-carousel-hover-arrow{position:absolute;top:0;bottom:0;width:clamp(52px,18%,82px);z-index:2;display:flex;align-items:center;justify-content:center;border:0;color:white;font:38px 'DM Mono',monospace;cursor:pointer;opacity:0;transition:opacity .2s ease}
+
+  .space-carousel-hover-arrow.prev{left:0;background:linear-gradient(90deg,rgba(0,0,0,.35),transparent)}
+
+  .space-carousel-hover-arrow.next{right:0;background:linear-gradient(270deg,rgba(0,0,0,.35),transparent)}
+
+  .space-carousel-photo:hover .space-carousel-hover-arrow,.space-carousel-hover-arrow:focus-visible{opacity:1}
+
+}
+
+@media(hover:none), (pointer:coarse){.space-carousel-hover-arrow{display:none!important}}
+
+
+/* TALKS — new section, preserving the existing visual language */
+.talks{top:66%!important}
+.archive{top:72.5%!important}
+.booking{top:79%!important}
+.presskit-entry{top:85.5%!important}
+.talks-body{max-width:770px;font-size:clamp(17px,2vw,25px);line-height:1.7;letter-spacing:-.025em}
+.talks-body p{margin:0 0 1.55em}
+.talks-formats{margin:40px 0 20px;font:11px/2 'DM Mono',monospace;letter-spacing:.06em}
+.talks-audience{margin-top:0;font-size:14px;line-height:1.8;color:var(--soft);max-width:680px}
+.talks .link{margin-top:20px}
+.music-mentoring{margin-top:45px;max-width:720px;font-size:15px;line-height:1.85;color:var(--soft)}
+@media(max-width:720px){
+ .about-entry{top:35%!important}.music{top:42%!important}.sessions{top:49%!important}
+ .spaces{top:56%!important}.talks{top:63%!important}.archive{top:70%!important}
+ .booking{top:77%!important}.presskit-entry{top:84%!important}
+ .talks-body{font-size:17px}
+}
+</style></head><body><header><a aria-label="HEADBIRDS home" class="mark" href="#home">HB.</a><span class="mono" data-content="header_phrase">An ongoing practice</span><button class="mono toplink" type="button" data-open="booking" style="background:none;border:0;border-bottom:1px solid currentColor;cursor:pointer">Contact ↗</button></header><main id="home"><div class="stage"><div class="name hand" data-content="artist_name">HEADBIRDS</div><img alt="HEADBIRDS portrait in red and green light" class="portrait" data-content="hero_photo" data-content-attr="src" src="assets/portrait.jpg"/><p class="tiny-note mono" data-content="hero_note">Music, places, ideas. One continuous practice.</p><button class="entry music" data-open="music"><span class="hand">Music</span><small>02 / original works ↗</small></button><button class="entry sessions" data-open="sessions"><span class="hand">DJ sets</span><small>03 / selections ↗</small></button><button class="entry spaces" data-open="spaces"><span class="hand">Spaces</span><small>04 / places ↗</small></button><button class="entry talks" data-open="talks"><span class="hand">Talks</span><small>05 / exchange ↗</small></button><button class="entry archive" data-open="archive"><span class="hand">Archive</span><small>05 / fragments ↗</small></button><button aria-label="Open booking" class="entry booking" data-open="booking"><span class="hand">Booking</span><small>06 / enquiries ↗</small></button><div class="scribble hand" data-content="hero_scribble">Follow your curiosity ↗</div><div class="stage-count mono" data-content="hero_location">BCN / ELSEWHERE</div><button aria-label="About" class="entry about-entry" data-open="about" type="button"><span>About</span><small>01 / biography ↗</small></button><button aria-label="Press Kit" class="entry presskit-entry" data-open="presskit" type="button"><span>Press Kit</span><small>07 / download ↗</small></button></div><div class="bottom-note"><p data-content="footer_description">Records, selections, places and everything that happens in between. No fixed order.</p><div class="footer-right"><nav class="social-links" aria-label="HEADBIRDS social profiles"><a href="https://www.instagram.com/headbirds/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://soundcloud.com/headbirds" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud" title="SoundCloud"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 13v5M5.5 11v7M8 10v8M10.5 8v10M13 7.5c1.3-1.6 3-2.3 4.7-2.1 2.8.3 4.3 2.6 4.3 5.1a4 4 0 0 1-.4 7.5H13"/></svg></a><a href="https://www.mixcloud.com/headbirds/" target="_blank" rel="noopener noreferrer" aria-label="Mixcloud" title="Mixcloud"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16.5a4.5 4.5 0 0 1 4.4-4.6c.7-3.3 3.3-5.4 6.6-5.4 3.1 0 5.6 2 6.1 4.8a3.6 3.6 0 0 1-.4 7.2H7.6A3.6 3.6 0 0 1 4 16.5Z"/><path d="M2 11c1.1-3.9 4.3-6.5 8.4-7"/></svg></a><a href="https://www.youtube.com/@danielguijarro8723" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3Z" fill="currentColor" stroke="none"/></svg></a><a href="https://headbirds.bandcamp.com/" target="_blank" rel="noopener noreferrer" aria-label="Bandcamp" title="Bandcamp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5h13l-5 14H3Z" fill="currentColor" stroke="none"/></svg></a></nav><span class="mono">HEADBIRDS © 2026</span></div></div></main>
+
+
+
+<section aria-label="Music" class="overlay" id="music"><div class="panel-head"><span class="mono">HEADBIRDS / 01</span><button class="close" data-close="">Close ✕</button></div><div class="panel"><h1 class="hand">Music</h1><p class="sub" data-content="music_subtitle">Original works. Ideas pressed into sound.</p><div data-list="music_releases"></div><p class="music-mentoring">Beyond production itself, collaborations can also involve artistic mentoring — a shared process of exploring ideas, shaping a sound and developing a distinctive musical identity.</p><div class="music-platform-links"><a class="link" href="https://headbirds.bandcamp.com/" rel="noopener" target="_blank">LISTEN ON BANDCAMP ↗</a><a class="link" href="https://www.youtube.com/@danielguijarro8723" rel="noopener noreferrer" target="_blank">LISTEN ON YOUTUBE ↗</a><a class="link" href="https://soundcloud.com/headbirds" rel="noopener noreferrer" target="_blank">LISTEN ON SOUNDCLOUD ↗</a><a class="link" href="https://tidal.com/artist/headbirds/4611661" rel="noopener noreferrer" target="_blank">LISTEN ON TIDAL ↗</a><a class="link" href="https://open.spotify.com/artist/4FDpyYV7YrYmiVgLw3sZ0g" rel="noopener noreferrer" target="_blank">LISTEN ON SPOTIFY ↗</a></div></div></section>
+
+
 
 <section aria-label="Sessions" class="overlay" id="sessions"><div class="panel-head"><span class="mono">HEADBIRDS / 02</span><button class="close" data-close="">Close ✕</button></div><div class="panel"><h1 class="hand">DJ sets</h1><p class="sub" data-content="sessions_subtitle">Records in conversation. Selections without boundaries.</p><p class="panel-copy" data-content="sessions_description">An open space for mixes, recordings and unexpected connections.</p><div class="mixcloud-embed" aria-label="HEADBIRDS SoundCloud player"><iframe title="HEADBIRDS — MOOG, October 2026" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fheadbirds%2Fheadbirds-moog-octubre-2026&color=%23171816&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false" width="100%" height="166" frameborder="0" scrolling="no" loading="lazy" allow="autoplay" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><a class="link" href="https://soundcloud.com/headbirds/headbirds-moog-octubre-2026" target="_blank" rel="noopener noreferrer">LISTEN ON SOUNDCLOUD ↗</a></div></section>
 
+
+
 <section aria-label="Spaces" class="overlay" id="spaces"><div class="panel-head"><span class="mono">HEADBIRDS / 03</span><button class="close" data-close="">Close ✕</button></div><div class="panel"><h1 class="hand">Spaces</h1><p class="sub" data-content="spaces_subtitle">Sometimes making music means making room for it.</p><div class="spaces-logo-grid" aria-label="Explore the Spaces projects"><button class="space-project-trigger spaces-logo-button" type="button" data-space-project="1" aria-label="Explore Les Arcs"><img src="assets/Les_Arcs_Spaces_Portada.webp" alt="Les Arcs" loading="lazy"><span class="spaces-logo-label" data-content="spaces_name_1">Les Arcs</span></button><button class="space-project-trigger spaces-logo-button" type="button" data-space-project="2" aria-label="Explore L’Estrany"><img src="assets/LEstrany_Spaces_Portada.webp" alt="L’Estrany" loading="lazy"><span class="spaces-logo-label" data-content="spaces_name_2">L’Estrany</span></button><button class="space-project-trigger spaces-logo-button" type="button" data-space-project="3" aria-label="Explore COREA"><img src="assets/COREA_Spaces_Portada.webp" alt="COREA" loading="lazy"><span class="spaces-logo-label" data-content="spaces_name_3">COREA</span></button></div><p class="panel-copy" data-content="spaces_description">Places, nights and encounters made from the same impulse — creating conditions for music, for other artists, for something to happen.</p><div data-list="spaces_photos"></div><p class="quiet" data-content="spaces_note" style="margin-top:55px">Three among many expressions of an ongoing practice.</p></div></section>
 
+
+
+<section aria-label="Talks" class="overlay" id="talks"><div class="panel-head"><span class="mono">HEADBIRDS / TALKS</span><button class="close" data-close="">Close ✕</button></div><div class="panel"><h1 class="hand">Talks</h1><p class="sub">Ideas are meant to be shared.</p><figure class="talks-photo"><img src="assets/talks-workshop.webp" alt="Participants gathered around electronic music equipment during a workshop" width="1080" height="485" loading="lazy"></figure><p class="talks-formats">TALKS · WORKSHOPS · MASTERCLASSES · ARTISTIC MENTORING</p><p class="talks-audience">For educational institutions, cultural spaces, festivals, creative organisations and individual artists.</p><div class="talks-body"><p>Teaching, exchanging ideas and sharing knowledge have always been part of the creative journey.</p><p>From DJ courses and sound design workshops to children's music workshops, live performance masterclasses and conversations about club culture and the electronic music scene, these experiences have created opportunities to explore music from different perspectives.</p><p>Collaborations with institutions such as EUMES Girona, The Bass Valley and Escola de Música de Banyoles have brought together technical knowledge, artistic curiosity and a shared desire to experiment.</p><p><strong>Artistic mentoring is another essential part of this practice.</strong> Closely connected to music production for other artists, it focuses on accompanying the creative process, exploring ideas and developing a personal musical identity. Rather than offering predefined solutions, the aim is to listen, question, experiment and help each artist find their own voice.</p><p>Beyond teaching techniques or sharing experience, the intention is to create meaningful exchanges where knowledge, creativity and different perspectives can meet.</p></div><a class="link" href="#booking" data-talks-booking>INTERESTED IN A SESSION, COLLABORATION OR MENTORING? LET'S TALK ↗</a></div></section>
 <section aria-label="Archive" class="overlay" id="archive"><div class="panel-head"><span class="mono">HEADBIRDS / 04</span><button class="close" data-close="">Close ✕</button></div><div class="panel"><h1 class="hand">Archive</h1><p class="sub" data-content="archive_subtitle">Fragments, images, traces. Not everything fits on a record.</p><div data-list="archive_items"></div><p class="quiet" data-content="archive_note">Fragment 001. An archive that can keep growing.</p></div></section>
+
+
 
 <section aria-label="Booking" class="overlay" id="booking"><div class="panel-head"><span class="mono">HEADBIRDS / 05</span><button class="close" data-close="">Close ✕</button></div><div class="panel"><h1 class="hand">Booking</h1><p class="sub" data-content="booking_subtitle">For performances, collaborations and other conversations.</p><form class="booking-form" id="bookingForm" name="booking" method="POST" action="/booking-success.html" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="booking"/><p class="hidden-field"><label>Do not fill this in<input name="bot-field" autocomplete="off"/></label></p><label>Your name<input autocomplete="name" name="name" placeholder="Name" required=""/></label><label>Your email<input autocomplete="email" name="email" placeholder="Email" required="" type="email"/></label><label>Message<textarea name="message" placeholder="Tell me about it" required="" rows="5"></textarea></label><button type="submit">SEND MESSAGE ↗</button><p class="quiet">Your message is submitted through this website.</p></form></div></section><section aria-label="About" class="overlay" id="about"><div class="panel-head"><span class="mono">HEADBIRDS / 01</span><button class="close" data-close="">Close ✕</button></div><div class="panel"><h1 class="hand">About</h1><p class="sub" data-content="about_subtitle">An ongoing practice in electronic music.</p><div class="about-body"><p data-content="about_paragraph_1">For around two decades, HEADBIRDS has developed a sound that resists easy categorisation. House provides the warmth, electro introduces syncopation, and techno gives the music its physical force. The result moves between genres without settling into one.</p><p data-content="about_paragraph_2">Across EPs and albums including <em>Kulturhaus</em> and <em>Atzar</em>, that approach has travelled through clubs and festivals from Barcelona and Paris to New York, Hong Kong and Bangkok.</p><p data-content="about_paragraph_3">But the work extends beyond records and DJ sets. Creating spaces for music and for other artists — including Les Arcs, L’Estrany and COREA, among other projects — belongs to the same restless artistic impulse.</p></div><p class="quiet" data-content="about_note">Adapted from the HEADBIRDS press kit, with the broader artistic practice included.</p></div></section><section aria-label="Press Kit" class="overlay" id="presskit"><div class="panel-head"><span class="mono">HEADBIRDS / 07</span><button class="close" data-close="">Close ✕</button></div><div class="panel"><h1 class="hand">Press Kit</h1><p class="sub" data-content="presskit_subtitle">Biography, selected releases, performances and press materials.</p><p class="panel-copy" data-content="presskit_description">A document for those who need the details.</p><a class="link" data-content="presskit_file" data-content-attr="href" download="" href="HEADBIRDS_Press_Kit.pdf" rel="noopener" target="_blank">DOWNLOAD ORIGINAL PRESS KIT (PDF) ↗</a><p class="quiet" data-content="presskit_note" style="margin-top:25px">Original English press kit. The About text on this website is a shorter, updated interpretation.</p></div></section><script>
 
+
+
 const panels = [...document.querySelectorAll('.overlay')];
 
-const sectionIds = ['about','music','sessions','spaces','archive','booking','presskit'];
+
+
+const sectionIds = ['about','music','sessions','spaces','talks','archive','booking','presskit'];
+
+
+
+
 
 
 
 function renderSection(id, focusClose = false) {
 
-  const active = sectionIds.includes(id) ? id : null;
 
-  panels.forEach(panel => {
 
-    panel.classList.toggle('open', panel.id === active);
+  const active = sectionIds.includes(id) ? id : null;
 
-    if (panel.id === active) panel.scrollTop = 0;
 
-  });
 
-  document.body.style.overflow = active ? 'hidden' : '';
+  panels.forEach(panel => {
 
-  if (active && focusClose) {
 
-    const close = document.querySelector('#' + active + ' [data-close]');
 
-    if (close) close.focus({preventScroll:true});
+    panel.classList.toggle('open', panel.id === active);
 
-  }
+
+
+    if (panel.id === active) panel.scrollTop = 0;
+
+
+
+  });
+
+
+
+  document.body.style.overflow = active ? 'hidden' : '';
+
+
+
+  if (active && focusClose) {
+
+
+
+    const close = document.querySelector('#' + active + ' [data-close]');
+
+
+
+    if (close) close.focus({preventScroll:true});
+
+
+
+  }
+
+
 
 }
+
+
+
+
 
 
 
 function show(id) {
 
-  if (!sectionIds.includes(id)) return;
 
-  if (location.hash !== '#' + id) {
 
-    history.pushState({headbirdsSection:id}, '', '#' + id);
+  if (!sectionIds.includes(id)) return;
 
-  }
 
-  renderSection(id, true);
+
+  if (location.hash !== '#' + id) {
+
+
+
+    history.pushState({headbirdsSection:id}, '', '#' + id);
+
+
+
+  }
+
+
+
+  renderSection(id, true);
+
+
 
 }
+
+
+
+
 
 
 
 function hide() {
 
-  history.replaceState(null, '', location.pathname + location.search + '#home');
 
-  renderSection(null);
+
+  history.replaceState(null, '', location.pathname + location.search + '#home');
+
+
+
+  renderSection(null);
+
+
 
 }
 
 
 
+
+
+
+
 document.querySelectorAll('[data-open]').forEach(button =>
 
-  button.addEventListener('click', () => show(button.dataset.open))
+
+
+  button.addEventListener('click', () => show(button.dataset.open))
+
+
 
 );
+
+
+
+document.querySelectorAll('[data-talks-booking]').forEach(link => link.addEventListener('click', event => { event.preventDefault(); show('booking'); }));
 
 document.querySelectorAll('[data-close]').forEach(button =>
 
-  button.addEventListener('click', hide)
+
+
+  button.addEventListener('click', hide)
+
+
 
 );
 
+
+
 document.addEventListener('keydown', event => {
 
-  if (event.key === 'Escape') hide();
+
+
+  if (event.key === 'Escape') hide();
+
+
 
 });
 
+
+
 window.addEventListener('popstate', () => renderSection(location.hash.slice(1)));
+
+
 
 window.addEventListener('hashchange', () => renderSection(location.hash.slice(1)));
 
+
+
 renderSection(location.hash.slice(1));
+
+
 
 </script><script src="assets/content.js"></script>
 
+
+
 <!-- HEADBIRDS — Soundtrack -->
+
+
 
 <audio id="headbirdsAudio" src="/assets/lastonemp3.mp3" preload="metadata"></audio>
 
 
 
+
+
+
+
 <button id="soundToggle" type="button" aria-label="Play music"
 
-  style="position:fixed;right:22px;top:50%;transform:translateY(-50%);
 
-  background:transparent;color:#f5f4ee;border:1px solid currentColor;
 
-  padding:11px 14px;font:11px monospace;letter-spacing:.08em;
+  style="position:fixed;right:22px;top:50%;transform:translateY(-50%);
 
-  cursor:pointer;mix-blend-mode:difference;">
 
-  SOUND ON ↗
+
+  background:transparent;color:#f5f4ee;border:1px solid currentColor;
+
+
+
+  padding:11px 14px;font:11px monospace;letter-spacing:.08em;
+
+
+
+  cursor:pointer;mix-blend-mode:difference;">
+
+
+
+  SOUND ON ↗
+
+
 
 </button>
 
 
 
+
+
+
+
 <script>
+
+
 
 (function () {
 
-  const audio = document.getElementById('headbirdsAudio');
-
-  const button = document.getElementById('soundToggle');
 
 
-
-  audio.loop = false;
+  const audio = document.getElementById('headbirdsAudio');
 
 
 
-  function updateButton() {
-
-    const playing = !audio.paused && !audio.ended;
-
-    button.textContent = playing ? 'SOUND OFF ↗' : 'SOUND ON ↗';
-
-    button.setAttribute('aria-label', playing ? 'Pause music' : 'Play music');
-
-  }
+  const button = document.getElementById('soundToggle');
 
 
 
-  button.addEventListener('click', async function () {
-
-    if (audio.paused) {
-
-      try {
-
-        if (audio.ended) audio.currentTime = 0;
-
-        await audio.play();
-
-      } catch (error) {
-
-        console.log('Audio playback unavailable:', error);
-
-      }
-
-    } else {
-
-      audio.pause();
-
-    }
-
-    updateButton();
-
-  });
 
 
 
-  audio.addEventListener('play', updateButton);
 
-  audio.addEventListener('pause', updateButton);
-
-  audio.addEventListener('ended', updateButton);
+  audio.loop = false;
 
 
 
-  audio.play().catch(function () {
 
-    updateButton();
 
-  });
+
+
+  function updateButton() {
+
+
+
+    const playing = !audio.paused && !audio.ended;
+
+
+
+    button.textContent = playing ? 'SOUND OFF ↗' : 'SOUND ON ↗';
+
+
+
+    button.setAttribute('aria-label', playing ? 'Pause music' : 'Play music');
+
+
+
+  }
+
+
+
+
+
+
+
+  button.addEventListener('click', async function () {
+
+
+
+    if (audio.paused) {
+
+
+
+      try {
+
+
+
+        if (audio.ended) audio.currentTime = 0;
+
+
+
+        await audio.play();
+
+
+
+      } catch (error) {
+
+
+
+        console.log('Audio playback unavailable:', error);
+
+
+
+      }
+
+
+
+    } else {
+
+
+
+      audio.pause();
+
+
+
+    }
+
+
+
+    updateButton();
+
+
+
+  });
+
+
+
+
+
+
+
+  audio.addEventListener('play', updateButton);
+
+
+
+  audio.addEventListener('pause', updateButton);
+
+
+
+  audio.addEventListener('ended', updateButton);
+
+
+
+
+
+
+
+  audio.play().catch(function () {
+
+
+
+    updateButton();
+
+
+
+  });
+
+
 
 })();
 
+
+
 </script>
+
+
+
+
 
 
 
 <!-- Floating Spaces note: independent of section navigation -->
 
+
+
 <div id="spaceNoteShade" class="space-note-shade" aria-hidden="true">
 
-  <div class="space-note" role="dialog" aria-modal="true" aria-labelledby="spaceNoteTitle">
 
-    <button id="spaceNoteClose" class="space-note-x" type="button" aria-label="Close project">×</button>
 
-    <h2 id="spaceNoteTitle"></h2>
+  <div class="space-note" role="dialog" aria-modal="true" aria-labelledby="spaceNoteTitle">
 
-    <div id="spaceCarousel" class="space-carousel" hidden>
 
-       <div class="space-carousel-photo">
-         <img id="spaceNoteImage" alt="" title="Click to see next photograph">
-         <button id="spaceHoverPrev" class="space-carousel-hover-arrow prev" type="button" aria-label="Previous photograph">←</button>
-         <button id="spaceHoverNext" class="space-carousel-hover-arrow next" type="button" aria-label="Next photograph">→</button>
-       </div>
 
-       <div id="spaceCarouselControls" class="space-carousel-controls" hidden>
+    <button id="spaceNoteClose" class="space-note-x" type="button" aria-label="Close project">×</button>
 
-         <button id="spacePrev" type="button" aria-label="Previous photograph">←</button>
 
-         <span id="spaceCounter" aria-live="polite"></span>
 
-         <button id="spaceNext" type="button" aria-label="Next photograph">→</button>
+    <h2 id="spaceNoteTitle"></h2>
 
-       </div>
 
-     </div>
 
-    <p id="spaceNoteText" hidden></p>
+    <div id="spaceCarousel" class="space-carousel" hidden>
 
-  </div>
+
+
+       <div class="space-carousel-photo">
+
+         <img id="spaceNoteImage" alt="" title="Click to see next photograph">
+
+         <button id="spaceHoverPrev" class="space-carousel-hover-arrow prev" type="button" aria-label="Previous photograph">←</button>
+
+         <button id="spaceHoverNext" class="space-carousel-hover-arrow next" type="button" aria-label="Next photograph">→</button>
+
+       </div>
+
+
+
+       <div id="spaceCarouselControls" class="space-carousel-controls" hidden>
+
+
+
+         <button id="spacePrev" type="button" aria-label="Previous photograph">←</button>
+
+
+
+         <span id="spaceCounter" aria-live="polite"></span>
+
+
+
+         <button id="spaceNext" type="button" aria-label="Next photograph">→</button>
+
+
+
+       </div>
+
+
+
+     </div>
+
+
+
+    <p id="spaceNoteText" hidden></p>
+
+
+
+  </div>
+
+
 
 </div>
 
+
+
 <script>
+
+
 
 (function () {
 
-  'use strict';
 
-  const shade = document.getElementById('spaceNoteShade');
 
-  const closeButton = document.getElementById('spaceNoteClose');
+  'use strict';
 
-  const title = document.getElementById('spaceNoteTitle');
 
-  const image = document.getElementById('spaceNoteImage');
 
-  const carousel = document.getElementById('spaceCarousel');
+  const shade = document.getElementById('spaceNoteShade');
 
-  const controls = document.getElementById('spaceCarouselControls');
 
-  const counter = document.getElementById('spaceCounter');
 
-  const prev = document.getElementById('spacePrev');
+  const closeButton = document.getElementById('spaceNoteClose');
 
-  const next = document.getElementById('spaceNext');
 
-  const paragraph = document.getElementById('spaceNoteText');
 
-  const triggers = Array.from(document.querySelectorAll('[data-space-project]'));
+  const title = document.getElementById('spaceNoteTitle');
 
-  let previousFocus = null;
 
-  let projectData = {};
 
-  let photos = [];
+  const image = document.getElementById('spaceNoteImage');
 
-  let currentPhoto = 0;
 
 
+  const carousel = document.getElementById('spaceCarousel');
 
-  fetch('content/site.json', {cache:'no-store'})
 
-    .then(response => response.ok ? response.json() : {})
 
-    .then(data => { projectData = data && typeof data === 'object' ? data : {}; })
+  const controls = document.getElementById('spaceCarouselControls');
 
-    .catch(() => {});
 
 
+  const counter = document.getElementById('spaceCounter');
 
-  function validImage(path) {
 
-    return typeof path === 'string' && /^(https?:\/\/|\/?assets\/)/i.test(path);
 
-  }
+  const prev = document.getElementById('spacePrev');
 
 
 
-  function showPhoto() {
-    if (!photos.length) {
+  const next = document.getElementById('spaceNext');
 
-      carousel.hidden = true;
 
-      image.removeAttribute('src');
-      controls.hidden = true;
-      return;
 
-    }
+  const paragraph = document.getElementById('spaceNoteText');
 
-    carousel.hidden = false;
 
-    image.src = photos[currentPhoto];
 
-    image.alt = title.textContent + ' — photograph ' + (currentPhoto + 1);
+  const triggers = Array.from(document.querySelectorAll('[data-space-project]'));
 
-    counter.textContent = String(currentPhoto + 1).padStart(2, '0') + ' / ' + String(photos.length).padStart(2, '0');
 
-    controls.hidden = photos.length < 2;
-    document.getElementById('spaceHoverPrev').hidden = photos.length < 2;
-    document.getElementById('spaceHoverNext').hidden = photos.length < 2;
 
-  }
+  let previousFocus = null;
 
 
 
-  function movePhoto(delta) {
+  let projectData = {};
 
-    if (photos.length < 2) return;
 
-    currentPhoto = (currentPhoto + delta + photos.length) % photos.length;
 
-    showPhoto();
+  let photos = [];
 
-  }
 
 
+  let currentPhoto = 0;
 
-  function openNote(button) {
 
-    const number = button.getAttribute('data-space-project');
 
-    previousFocus = button;
 
-    title.textContent = button.textContent.trim();
 
-    const descriptionKey = {1:'spaces_les_arcs_description',2:'spaces_lestrany_description',3:'spaces_corea_description'}[number];
 
-    const imageKey = {1:'spaces_les_arcs_image',2:'spaces_lestrany_image',3:'spaces_corea_image'}[number];
 
-    const galleryKey = {1:'spaces_les_arcs_gallery',2:'spaces_lestrany_gallery',3:'spaces_corea_gallery'}[number];
+  fetch('content/site.json', {cache:'no-store'})
 
-    const description = projectData[descriptionKey];
 
-    paragraph.textContent = typeof description === 'string' ? description : '';
 
-    paragraph.hidden = !paragraph.textContent.trim();
+    .then(response => response.ok ? response.json() : {})
 
-    const gallery = projectData[galleryKey];
 
-    photos = Array.isArray(gallery) ? gallery.map(item => typeof item === 'string' ? item : item && item.image).filter(validImage) : [];
 
-    // Existing single image stays visible until a gallery is created in Pages CMS.
+    .then(data => { projectData = data && typeof data === 'object' ? data : {}; })
 
-    if (!photos.length && validImage(projectData[imageKey])) photos = [projectData[imageKey]];
 
-    currentPhoto = 0;
 
-    showPhoto();
+    .catch(() => {});
 
-    shade.classList.add('visible');
 
-    shade.setAttribute('aria-hidden', 'false');
 
-    closeButton.focus({preventScroll:true});
 
-  }
 
-  function closeNote() {
 
-    if (!shade.classList.contains('visible')) return;
 
-    shade.classList.remove('visible');
+  function validImage(path) {
 
-    shade.setAttribute('aria-hidden', 'true');
 
-    if (previousFocus && previousFocus.isConnected) previousFocus.focus({preventScroll:true});
 
-  }
+    return typeof path === 'string' && /^(https?:\/\/|\/?assets\/)/i.test(path);
 
-  triggers.forEach(button => button.addEventListener('click', () => openNote(button)));
 
-  closeButton.addEventListener('click', closeNote);
 
-  prev.addEventListener('click', () => movePhoto(-1));
+  }
 
-  next.addEventListener('click', () => movePhoto(1));
-  document.getElementById('spaceHoverPrev').addEventListener('click', () => movePhoto(-1));
-  document.getElementById('spaceHoverNext').addEventListener('click', () => movePhoto(1));
 
-  // Click the image to advance. On touchscreens, swipe horizontally.
-  let suppressImageClick = false;
-  image.addEventListener('click', () => {
-    if (suppressImageClick) { suppressImageClick = false; return; }
-    if (photos.length > 1) movePhoto(1);
-  });
-  let touchStartX = null;
-  let touchStartY = null;
-  image.addEventListener('touchstart', event => {
-    if (event.touches.length !== 1) return;
-    touchStartX = event.touches[0].clientX;
-    touchStartY = event.touches[0].clientY;
-  }, {passive:true});
-  image.addEventListener('touchend', event => {
-    if (touchStartX === null || !event.changedTouches.length) return;
-    const dx = event.changedTouches[0].clientX - touchStartX;
-    const dy = event.changedTouches[0].clientY - touchStartY;
-    touchStartX = null;
-    touchStartY = null;
-    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.3) {
-      movePhoto(dx < 0 ? 1 : -1);
-      suppressImageClick = true;
-    }
-  }, {passive:true});
 
 
-  shade.addEventListener('click', event => { if (event.target === shade) closeNote(); });
 
-  document.addEventListener('keydown', event => {
 
-    if (!shade.classList.contains('visible')) return;
 
-    if (event.key === 'Escape') { event.preventDefault(); event.stopImmediatePropagation(); closeNote(); }
+  function showPhoto() {
 
-    if (event.key === 'ArrowLeft') { event.preventDefault(); movePhoto(-1); }
+    if (!photos.length) {
 
-    if (event.key === 'ArrowRight') { event.preventDefault(); movePhoto(1); }
 
-    if (event.key === 'Tab') {
 
-      const focusable = [closeButton, ...(photos.length > 1 ? [prev, next] : [])];
+      carousel.hidden = true;
 
-      const index = focusable.indexOf(document.activeElement);
 
-      if (event.shiftKey && index <= 0) { event.preventDefault(); focusable[focusable.length - 1].focus(); }
 
-      else if (!event.shiftKey && index === focusable.length - 1) { event.preventDefault(); focusable[0].focus(); }
+      image.removeAttribute('src');
 
-    }
+      controls.hidden = true;
 
-  }, true);
+      return;
 
-  window.addEventListener('popstate', closeNote);
 
-  window.addEventListener('hashchange', closeNote);
+
+    }
+
+
+
+    carousel.hidden = false;
+
+
+
+    image.src = photos[currentPhoto];
+
+
+
+    image.alt = title.textContent + ' — photograph ' + (currentPhoto + 1);
+
+
+
+    counter.textContent = String(currentPhoto + 1).padStart(2, '0') + ' / ' + String(photos.length).padStart(2, '0');
+
+
+
+    controls.hidden = photos.length < 2;
+
+    document.getElementById('spaceHoverPrev').hidden = photos.length < 2;
+
+    document.getElementById('spaceHoverNext').hidden = photos.length < 2;
+
+
+
+  }
+
+
+
+
+
+
+
+  function movePhoto(delta) {
+
+
+
+    if (photos.length < 2) return;
+
+
+
+    currentPhoto = (currentPhoto + delta + photos.length) % photos.length;
+
+
+
+    showPhoto();
+
+
+
+  }
+
+
+
+
+
+
+
+  function openNote(button) {
+
+
+
+    const number = button.getAttribute('data-space-project');
+
+
+
+    previousFocus = button;
+
+
+
+    title.textContent = button.textContent.trim();
+
+
+
+    const descriptionKey = {1:'spaces_les_arcs_description',2:'spaces_lestrany_description',3:'spaces_corea_description'}[number];
+
+
+
+    const imageKey = {1:'spaces_les_arcs_image',2:'spaces_lestrany_image',3:'spaces_corea_image'}[number];
+
+
+
+    const galleryKey = {1:'spaces_les_arcs_gallery',2:'spaces_lestrany_gallery',3:'spaces_corea_gallery'}[number];
+
+
+
+    const description = projectData[descriptionKey];
+
+
+
+    paragraph.textContent = typeof description === 'string' ? description : '';
+
+
+
+    paragraph.hidden = !paragraph.textContent.trim();
+
+
+
+    const gallery = projectData[galleryKey];
+
+
+
+    photos = Array.isArray(gallery) ? gallery.map(item => typeof item === 'string' ? item : item && item.image).filter(validImage) : [];
+
+
+
+    // Existing single image stays visible until a gallery is created in Pages CMS.
+
+
+
+    if (!photos.length && validImage(projectData[imageKey])) photos = [projectData[imageKey]];
+
+
+
+    currentPhoto = 0;
+
+
+
+    showPhoto();
+
+
+
+    shade.classList.add('visible');
+
+
+
+    shade.setAttribute('aria-hidden', 'false');
+
+
+
+    closeButton.focus({preventScroll:true});
+
+
+
+  }
+
+
+
+  function closeNote() {
+
+
+
+    if (!shade.classList.contains('visible')) return;
+
+
+
+    shade.classList.remove('visible');
+
+
+
+    shade.setAttribute('aria-hidden', 'true');
+
+
+
+    if (previousFocus && previousFocus.isConnected) previousFocus.focus({preventScroll:true});
+
+
+
+  }
+
+
+
+  triggers.forEach(button => button.addEventListener('click', () => openNote(button)));
+
+
+
+  closeButton.addEventListener('click', closeNote);
+
+
+
+  prev.addEventListener('click', () => movePhoto(-1));
+
+
+
+  next.addEventListener('click', () => movePhoto(1));
+
+  document.getElementById('spaceHoverPrev').addEventListener('click', () => movePhoto(-1));
+
+  document.getElementById('spaceHoverNext').addEventListener('click', () => movePhoto(1));
+
+
+
+  // Click the image to advance. On touchscreens, swipe horizontally.
+
+  let suppressImageClick = false;
+
+  image.addEventListener('click', () => {
+
+    if (suppressImageClick) { suppressImageClick = false; return; }
+
+    if (photos.length > 1) movePhoto(1);
+
+  });
+
+  let touchStartX = null;
+
+  let touchStartY = null;
+
+  image.addEventListener('touchstart', event => {
+
+    if (event.touches.length !== 1) return;
+
+    touchStartX = event.touches[0].clientX;
+
+    touchStartY = event.touches[0].clientY;
+
+  }, {passive:true});
+
+  image.addEventListener('touchend', event => {
+
+    if (touchStartX === null || !event.changedTouches.length) return;
+
+    const dx = event.changedTouches[0].clientX - touchStartX;
+
+    const dy = event.changedTouches[0].clientY - touchStartY;
+
+    touchStartX = null;
+
+    touchStartY = null;
+
+    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.3) {
+
+      movePhoto(dx < 0 ? 1 : -1);
+
+      suppressImageClick = true;
+
+    }
+
+  }, {passive:true});
+
+
+
+
+
+  shade.addEventListener('click', event => { if (event.target === shade) closeNote(); });
+
+
+
+  document.addEventListener('keydown', event => {
+
+
+
+    if (!shade.classList.contains('visible')) return;
+
+
+
+    if (event.key === 'Escape') { event.preventDefault(); event.stopImmediatePropagation(); closeNote(); }
+
+
+
+    if (event.key === 'ArrowLeft') { event.preventDefault(); movePhoto(-1); }
+
+
+
+    if (event.key === 'ArrowRight') { event.preventDefault(); movePhoto(1); }
+
+
+
+    if (event.key === 'Tab') {
+
+
+
+      const focusable = [closeButton, ...(photos.length > 1 ? [prev, next] : [])];
+
+
+
+      const index = focusable.indexOf(document.activeElement);
+
+
+
+      if (event.shiftKey && index <= 0) { event.preventDefault(); focusable[focusable.length - 1].focus(); }
+
+
+
+      else if (!event.shiftKey && index === focusable.length - 1) { event.preventDefault(); focusable[0].focus(); }
+
+
+
+    }
+
+
+
+  }, true);
+
+
+
+  window.addEventListener('popstate', closeNote);
+
+
+
+  window.addEventListener('hashchange', closeNote);
+
+
 
 })();
 
+
+
 </script>
+
+
 
 </body></html>
