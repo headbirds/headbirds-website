@@ -87,16 +87,6 @@ content:
       - name: spaces_les_arcs_image
         label: Les Arcs — Fotografía o logotipo
         type: image
-      - name: spaces_les_arcs_gallery
-        label: Les Arcs — Galería de fotografías (orden editable)
-        type: object
-        list: true
-        required: false
-        fields:
-          - name: image
-            label: Fotografía
-            type: image
-
 
       # Ventana flotante de L’Estrany
       - name: spaces_lestrany_description
@@ -105,16 +95,6 @@ content:
       - name: spaces_lestrany_image
         label: L’Estrany — Fotografía o logotipo
         type: image
-      - name: spaces_lestrany_gallery
-        label: L’Estrany — Galería de fotografías (orden editable)
-        type: object
-        list: true
-        required: false
-        fields:
-          - name: image
-            label: Fotografía
-            type: image
-
 
       # Ventana flotante de COREA
       - name: spaces_corea_description
@@ -123,16 +103,6 @@ content:
       - name: spaces_corea_image
         label: COREA — Fotografía o logotipo
         type: image
-      - name: spaces_corea_gallery
-        label: COREA — Galería de fotografías (orden editable)
-        type: object
-        list: true
-        required: false
-        fields:
-          - name: image
-            label: Fotografía
-            type: image
-
 
       - name: archive_subtitle
         label: Archive — Subtítulo
@@ -209,3 +179,567 @@ content:
           - name: caption
             label: Descripción
             type: string
+
+  - name: translations_ca
+    label: "Traducciones — Català — Contenido"
+    type: file
+    path: translations/ca.json
+    format: json
+    fields:
+      - name: header_phrase
+        label: "header phrase"
+        type: string
+        required: false
+      - name: hero_note
+        label: "hero note"
+        type: text
+        required: false
+      - name: hero_scribble
+        label: "hero scribble"
+        type: string
+        required: false
+      - name: hero_location
+        label: "hero location"
+        type: string
+        required: false
+      - name: footer_description
+        label: "footer description"
+        type: text
+        required: false
+      - name: about_subtitle
+        label: "about subtitle"
+        type: string
+        required: false
+      - name: about_note
+        label: "about note"
+        type: text
+        required: false
+      - name: about_paragraph_1
+        label: "about paragraph 1"
+        type: text
+        required: false
+      - name: music_subtitle
+        label: "music subtitle"
+        type: string
+        required: false
+      - name: sessions_subtitle
+        label: "sessions subtitle"
+        type: string
+        required: false
+      - name: sessions_description
+        label: "sessions description"
+        type: text
+        required: false
+      - name: sessions_note
+        label: "sessions note"
+        type: text
+        required: false
+      - name: spaces_subtitle
+        label: "spaces subtitle"
+        type: string
+        required: false
+      - name: spaces_description
+        label: "spaces description"
+        type: text
+        required: false
+      - name: spaces_note
+        label: "spaces note"
+        type: text
+        required: false
+      - name: spaces_les_arcs_description
+        label: "spaces les arcs description"
+        type: text
+        required: false
+      - name: spaces_lestrany_description
+        label: "spaces lestrany description"
+        type: text
+        required: false
+      - name: spaces_corea_description
+        label: "spaces corea description"
+        type: text
+        required: false
+      - name: archive_subtitle
+        label: "archive subtitle"
+        type: string
+        required: false
+      - name: booking_subtitle
+        label: "booking subtitle"
+        type: string
+        required: false
+      - name: presskit_subtitle
+        label: "presskit subtitle"
+        type: string
+        required: false
+      - name: presskit_description
+        label: "presskit description"
+        type: text
+        required: false
+      - name: presskit_note
+        label: "presskit note"
+        type: text
+        required: false
+
+  - name: translations_ca_ui
+    label: "Traducciones — Català — Menús y textos fijos"
+    type: file
+    path: translations/ca-ui.json
+    format: json
+    fields:
+      - name: ui_001
+        label: "About"
+        type: text
+        required: false
+      - name: ui_002
+        label: "Music"
+        type: text
+        required: false
+      - name: ui_003
+        label: "DJ sets"
+        type: text
+        required: false
+      - name: ui_004
+        label: "Spaces"
+        type: text
+        required: false
+      - name: ui_005
+        label: "Talks"
+        type: text
+        required: false
+      - name: ui_006
+        label: "Archive"
+        type: text
+        required: false
+      - name: ui_007
+        label: "Booking"
+        type: text
+        required: false
+      - name: ui_008
+        label: "Press Kit"
+        type: text
+        required: false
+      - name: ui_009
+        label: "Contact ↗"
+        type: text
+        required: false
+      - name: ui_010
+        label: "Close ✕"
+        type: text
+        required: false
+      - name: ui_011
+        label: "Ideas are meant to be shared."
+        type: text
+        required: false
+      - name: ui_012
+        label: "TALKS · WORKSHOPS · MASTERCLASSES · ARTISTIC MENTORING"
+        type: text
+        required: false
+      - name: ui_013
+        label: "For educational institutions, cultural spaces, festivals, creative organisations and individual ..."
+        type: text
+        required: false
+      - name: ui_014
+        label: "Teaching, exchanging ideas and sharing knowledge have always been part of the creative journey."
+        type: text
+        required: false
+      - name: ui_015
+        label: "From DJ courses and sound design workshops to children's music workshops, live performance maste..."
+        type: text
+        required: false
+      - name: ui_016
+        label: "Collaborations with institutions such as EUMES Girona, The Bass Valley and Escola de Música de B..."
+        type: text
+        required: false
+      - name: ui_017
+        label: "Artistic mentoring is another essential part of this practice."
+        type: text
+        required: false
+      - name: ui_018
+        label: "Closely connected to music production for other artists, it focuses on accompanying the creative..."
+        type: text
+        required: false
+      - name: ui_019
+        label: "Beyond teaching techniques or sharing experience, the intention is to create meaningful exchange..."
+        type: text
+        required: false
+      - name: ui_020
+        label: "INTERESTED IN A SESSION, COLLABORATION OR MENTORING? LET'S TALK ↗"
+        type: text
+        required: false
+      - name: ui_021
+        label: "Beyond production itself, collaborations can also involve artistic mentoring — a shared process ..."
+        type: text
+        required: false
+      - name: ui_022
+        label: "Your message is submitted through this website."
+        type: text
+        required: false
+      - name: ui_023
+        label: "SEND MESSAGE ↗"
+        type: text
+        required: false
+      - name: ui_024
+        label: "Name"
+        type: text
+        required: false
+      - name: ui_025
+        label: "Email"
+        type: text
+        required: false
+      - name: ui_026
+        label: "Tell me about it"
+        type: text
+        required: false
+      - name: ui_027
+        label: "Your name"
+        type: text
+        required: false
+      - name: ui_028
+        label: "Your email"
+        type: text
+        required: false
+      - name: ui_029
+        label: "Message"
+        type: text
+        required: false
+      - name: ui_030
+        label: "Do not fill this in"
+        type: text
+        required: false
+      - name: ui_031
+        label: "Original works. Ideas pressed into sound."
+        type: text
+        required: false
+      - name: ui_032
+        label: "An ongoing practice in electronic music."
+        type: text
+        required: false
+      - name: ui_033
+        label: "For around two decades, HEADBIRDS has developed a sound that resists easy categorisation. House ..."
+        type: text
+        required: false
+      - name: ui_034
+        label: "Across EPs and albums including"
+        type: text
+        required: false
+      - name: ui_035
+        label: "that approach has travelled through clubs and festivals from Barcelona and Paris to New York, Ho..."
+        type: text
+        required: false
+      - name: ui_036
+        label: "But the work extends beyond records and DJ sets. Creating spaces for music and for other artists..."
+        type: text
+        required: false
+      - name: ui_037
+        label: "Adapted from the HEADBIRDS press kit, with the broader artistic practice included."
+        type: text
+        required: false
+      - name: ui_038
+        label: "Fragment 001. An archive that can keep growing."
+        type: text
+        required: false
+      - name: ui_039
+        label: "DOWNLOAD ORIGINAL PRESS KIT (PDF) ↗"
+        type: text
+        required: false
+      - name: ui_040
+        label: "LISTEN ON BANDCAMP ↗"
+        type: text
+        required: false
+      - name: ui_041
+        label: "LISTEN ON YOUTUBE ↗"
+        type: text
+        required: false
+      - name: ui_042
+        label: "LISTEN ON SOUNDCLOUD ↗"
+        type: text
+        required: false
+      - name: ui_043
+        label: "LISTEN ON TIDAL ↗"
+        type: text
+        required: false
+      - name: ui_044
+        label: "LISTEN ON SPOTIFY ↗"
+        type: text
+        required: false
+
+  - name: translations_es
+    label: "Traducciones — Español — Contenido"
+    type: file
+    path: translations/es.json
+    format: json
+    fields:
+      - name: header_phrase
+        label: "header phrase"
+        type: string
+        required: false
+      - name: hero_note
+        label: "hero note"
+        type: text
+        required: false
+      - name: hero_scribble
+        label: "hero scribble"
+        type: string
+        required: false
+      - name: hero_location
+        label: "hero location"
+        type: string
+        required: false
+      - name: footer_description
+        label: "footer description"
+        type: text
+        required: false
+      - name: about_subtitle
+        label: "about subtitle"
+        type: string
+        required: false
+      - name: about_note
+        label: "about note"
+        type: text
+        required: false
+      - name: about_paragraph_1
+        label: "about paragraph 1"
+        type: text
+        required: false
+      - name: music_subtitle
+        label: "music subtitle"
+        type: string
+        required: false
+      - name: sessions_subtitle
+        label: "sessions subtitle"
+        type: string
+        required: false
+      - name: sessions_description
+        label: "sessions description"
+        type: text
+        required: false
+      - name: sessions_note
+        label: "sessions note"
+        type: text
+        required: false
+      - name: spaces_subtitle
+        label: "spaces subtitle"
+        type: string
+        required: false
+      - name: spaces_description
+        label: "spaces description"
+        type: text
+        required: false
+      - name: spaces_note
+        label: "spaces note"
+        type: text
+        required: false
+      - name: spaces_les_arcs_description
+        label: "spaces les arcs description"
+        type: text
+        required: false
+      - name: spaces_lestrany_description
+        label: "spaces lestrany description"
+        type: text
+        required: false
+      - name: spaces_corea_description
+        label: "spaces corea description"
+        type: text
+        required: false
+      - name: archive_subtitle
+        label: "archive subtitle"
+        type: string
+        required: false
+      - name: booking_subtitle
+        label: "booking subtitle"
+        type: string
+        required: false
+      - name: presskit_subtitle
+        label: "presskit subtitle"
+        type: string
+        required: false
+      - name: presskit_description
+        label: "presskit description"
+        type: text
+        required: false
+      - name: presskit_note
+        label: "presskit note"
+        type: text
+        required: false
+
+  - name: translations_es_ui
+    label: "Traducciones — Español — Menús y textos fijos"
+    type: file
+    path: translations/es-ui.json
+    format: json
+    fields:
+      - name: ui_001
+        label: "About"
+        type: text
+        required: false
+      - name: ui_002
+        label: "Music"
+        type: text
+        required: false
+      - name: ui_003
+        label: "DJ sets"
+        type: text
+        required: false
+      - name: ui_004
+        label: "Spaces"
+        type: text
+        required: false
+      - name: ui_005
+        label: "Talks"
+        type: text
+        required: false
+      - name: ui_006
+        label: "Archive"
+        type: text
+        required: false
+      - name: ui_007
+        label: "Booking"
+        type: text
+        required: false
+      - name: ui_008
+        label: "Press Kit"
+        type: text
+        required: false
+      - name: ui_009
+        label: "Contact ↗"
+        type: text
+        required: false
+      - name: ui_010
+        label: "Close ✕"
+        type: text
+        required: false
+      - name: ui_011
+        label: "Ideas are meant to be shared."
+        type: text
+        required: false
+      - name: ui_012
+        label: "TALKS · WORKSHOPS · MASTERCLASSES · ARTISTIC MENTORING"
+        type: text
+        required: false
+      - name: ui_013
+        label: "For educational institutions, cultural spaces, festivals, creative organisations and individual ..."
+        type: text
+        required: false
+      - name: ui_014
+        label: "Teaching, exchanging ideas and sharing knowledge have always been part of the creative journey."
+        type: text
+        required: false
+      - name: ui_015
+        label: "From DJ courses and sound design workshops to children's music workshops, live performance maste..."
+        type: text
+        required: false
+      - name: ui_016
+        label: "Collaborations with institutions such as EUMES Girona, The Bass Valley and Escola de Música de B..."
+        type: text
+        required: false
+      - name: ui_017
+        label: "Artistic mentoring is another essential part of this practice."
+        type: text
+        required: false
+      - name: ui_018
+        label: "Closely connected to music production for other artists, it focuses on accompanying the creative..."
+        type: text
+        required: false
+      - name: ui_019
+        label: "Beyond teaching techniques or sharing experience, the intention is to create meaningful exchange..."
+        type: text
+        required: false
+      - name: ui_020
+        label: "INTERESTED IN A SESSION, COLLABORATION OR MENTORING? LET'S TALK ↗"
+        type: text
+        required: false
+      - name: ui_021
+        label: "Beyond production itself, collaborations can also involve artistic mentoring — a shared process ..."
+        type: text
+        required: false
+      - name: ui_022
+        label: "Your message is submitted through this website."
+        type: text
+        required: false
+      - name: ui_023
+        label: "SEND MESSAGE ↗"
+        type: text
+        required: false
+      - name: ui_024
+        label: "Name"
+        type: text
+        required: false
+      - name: ui_025
+        label: "Email"
+        type: text
+        required: false
+      - name: ui_026
+        label: "Tell me about it"
+        type: text
+        required: false
+      - name: ui_027
+        label: "Your name"
+        type: text
+        required: false
+      - name: ui_028
+        label: "Your email"
+        type: text
+        required: false
+      - name: ui_029
+        label: "Message"
+        type: text
+        required: false
+      - name: ui_030
+        label: "Do not fill this in"
+        type: text
+        required: false
+      - name: ui_031
+        label: "Original works. Ideas pressed into sound."
+        type: text
+        required: false
+      - name: ui_032
+        label: "An ongoing practice in electronic music."
+        type: text
+        required: false
+      - name: ui_033
+        label: "For around two decades, HEADBIRDS has developed a sound that resists easy categorisation. House ..."
+        type: text
+        required: false
+      - name: ui_034
+        label: "Across EPs and albums including"
+        type: text
+        required: false
+      - name: ui_035
+        label: "that approach has travelled through clubs and festivals from Barcelona and Paris to New York, Ho..."
+        type: text
+        required: false
+      - name: ui_036
+        label: "But the work extends beyond records and DJ sets. Creating spaces for music and for other artists..."
+        type: text
+        required: false
+      - name: ui_037
+        label: "Adapted from the HEADBIRDS press kit, with the broader artistic practice included."
+        type: text
+        required: false
+      - name: ui_038
+        label: "Fragment 001. An archive that can keep growing."
+        type: text
+        required: false
+      - name: ui_039
+        label: "DOWNLOAD ORIGINAL PRESS KIT (PDF) ↗"
+        type: text
+        required: false
+      - name: ui_040
+        label: "LISTEN ON BANDCAMP ↗"
+        type: text
+        required: false
+      - name: ui_041
+        label: "LISTEN ON YOUTUBE ↗"
+        type: text
+        required: false
+      - name: ui_042
+        label: "LISTEN ON SOUNDCLOUD ↗"
+        type: text
+        required: false
+      - name: ui_043
+        label: "LISTEN ON TIDAL ↗"
+        type: text
+        required: false
+      - name: ui_044
+        label: "LISTEN ON SPOTIFY ↗"
+        type: text
+        required: false
