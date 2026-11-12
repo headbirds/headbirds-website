@@ -89,6 +89,16 @@ content:
         type: image
 
       # Ventana flotante de L’Estrany
+      - name: spaces_les_arcs_gallery
+        label: Les Arcs — Galería de fotografías (orden editable)
+        type: object
+        list: true
+        required: false
+        fields:
+          - name: image
+            label: Fotografía
+            type: image
+
       - name: spaces_lestrany_description
         label: L’Estrany — Descripción de la ventana
         type: text
@@ -97,12 +107,32 @@ content:
         type: image
 
       # Ventana flotante de COREA
+      - name: spaces_lestrany_gallery
+        label: L’Estrany — Galería de fotografías (orden editable)
+        type: object
+        list: true
+        required: false
+        fields:
+          - name: image
+            label: Fotografía
+            type: image
+
       - name: spaces_corea_description
         label: COREA — Descripción de la ventana
         type: text
       - name: spaces_corea_image
         label: COREA — Fotografía o logotipo
         type: image
+
+      - name: spaces_corea_gallery
+        label: COREA — Galería de fotografías (orden editable)
+        type: object
+        list: true
+        required: false
+        fields:
+          - name: image
+            label: Fotografía
+            type: image
 
       - name: archive_subtitle
         label: Archive — Subtítulo
