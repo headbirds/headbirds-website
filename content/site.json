@@ -95,5 +95,50 @@
       "image": "/assets/fotos archive/archive_09.webp",
       "caption": "Live al Sónar. 2016"
     }
+  ],
+  "spaces_les_arcs_gallery": [
+    {
+      "image": "/assets/les-arcs-03.webp"
+    },
+    {
+      "image": "/assets/les-arcs-01.webp"
+    },
+    {
+      "image": "/assets/les-arcs-02.webp"
+    },
+    {
+      "image": "/assets/les-arcs-04.webp"
+    },
+    {
+      "image": "/assets/les-arcs-05.webp"
+    },
+    {
+      "image": "/assets/les-arcs-06.webp"
+    }
+  ],
+  "spaces_lestrany_gallery": [
+    {
+      "image": "/assets/lestrany-07.webp"
+    },
+    {
+      "image": "/assets/lestrany-03.webp"
+    },
+    {
+      "image": "/assets/lestrany-02.webp"
+    },
+    {
+      "image": "/assets/lestrany-01.webp"
+    },
+    {
+      "image": "/assets/lestrany-04.webp"
+    },
+    {
+      "image": "/assets/lestrany-06.webp"
+    }
+  ],
+  "spaces_corea_gallery": [
+    {
+      "image": "/assets/Robadors+23.webp"
+    }
   ]
 }
